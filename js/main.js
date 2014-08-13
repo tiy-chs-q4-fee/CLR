@@ -16,8 +16,3 @@ var janQuotes = ["1500: The Portuguese explorer Pedro Alvares Cabral searches th
 
 
 "1492: Catholic forces under King Ferdinand and Queen Isabella take the town of Granada, the last Muslim kingdom in Spain."
-
-$(".homeButton").on("submit", function() {
-
-  prevent.eventDefault();
-});
