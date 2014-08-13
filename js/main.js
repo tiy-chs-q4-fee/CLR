@@ -11,4 +11,4 @@ var todaysMonth = todaysDate.getMonth();
 var todaysDay = todaysDate.getDate();
 
 //create empty variables for each month to hold the strings of quotes
-var janQuotes = ["1500: The Portuguese explorer Pedro Alvares Cabral searches the coast of Brazil and claims the region for Portugal.","1492: Catholic forces under King Ferdinand and Queen Isabella take the town of Granada, the last Muslim kingdom in Spain."], febQuotes = [], marQuotes = [], aprQuotes = [], mayQuotes = [], junQuotes = [], julQuotes = [], augQuotes = [], sepQuotes = [], octQuotes = [], novQuotes = []; decQuotes = [];
+var janQuotes = ["1500: The Portuguese explorer Pedro Alvares Cabral searches the coast of Brazil and claims the region for Portugal."], febQuotes = [], marQuotes = [], aprQuotes = [], mayQuotes = [], junQuotes = [], julQuotes = [], augQuotes = [], sepQuotes = [], octQuotes = [], novQuotes = []; decQuotes = [];
