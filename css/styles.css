@@ -37,6 +37,7 @@ body {
 /* Made the textBox site off the screen so we could transition it in */
 /*style for the textBox, quote and close button*/
 /* Made the textBox site off the screen so we could transition it in */
+/*style for the textBox, quote and close button*/
 .textBox {
   width: 400px;
   height: 300px;
@@ -60,9 +61,6 @@ body {
     font-size: 2em;
     color: white;
     border-bottom: 2px solid teal; }
-  .textBox hr {
-    width: 80%;
-    color: white; }
   .textBox .quote {
     font-size: 1.5em; }
 
