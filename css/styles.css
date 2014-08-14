@@ -9,6 +9,7 @@ body {
   background-color: #043D5D;
   overflow: hidden; }
 
+/* styled the homePage */
 .mainPage {
   z-index: 100;
   background-color: #043D5D;
@@ -33,12 +34,16 @@ body {
       background-color: #EB5055;
       cursor: pointer; }
 
+/* Made the textBox site off the screen so we could transition it in */
 .textBox {
   width: 400px;
   height: 300px;
   margin-top: -2000px;
   text-align: center; }
+  .textBox .badEvent {
+    padding: 10px; }
 
+/* This is the class that we are adding to make textBox transition in */
 .replace {
   z-index: 101;
   margin: 0px;
