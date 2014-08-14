@@ -306,7 +306,164 @@ function findHistoricPerson (todaysMonth, todaysDay) {
 
 };
 
-function previousDay (todaysMonth, todaysDay)
+function findPreviousDayQuote (todaysMonth, todaysDay) {
+
+  todaysDay = todaysDay - 1;
+
+
+  switch (todaysMonth) {
+  // January
+  case 0:
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[2];
+    break;
+
+  // February
+  case 1:
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[2];
+    break;
+
+  // March
+  case 2:
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[2];
+    break;
+
+  //April
+  case 3:
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[2];
+    break;
+
+  //May
+  case 4:
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[2];
+    break;
+
+  //June
+  case 5:
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[2];
+    break;
+
+  //July
+  case 6:
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[2];
+    break;
+
+  //August
+  case 7:
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[2];
+    break;
+
+  //September
+  case 8:
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[2];
+    break;
+
+  //October
+  case 9:
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[2];
+    break;
+
+  //November
+  case 10:
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[2];
+    break;
+
+  //December
+  case 11:
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[2];
+    break;
+
+  default:
+    statements_def
+    break;
+}
+
+};
+
+function findPreviousDayHistoricYear (todaysMonth, todaysDay) {
+
+  todaysDay = todaysDay - 1;
+
+  switch (todaysMonth) {
+  case 0:
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[0];
+    break;
+
+  case 1:
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[0];
+    break;
+
+  case 2:
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[0];
+    break;
+
+  case 3:
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[0];
+    break;
+
+  case 4:
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[0];
+    break;
+
+  case 5:
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[0];
+    break;
+
+  case 6:
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[0];
+    break;
+
+  case 7:
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[0];
+    break;
+
+  case 8:
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[0];
+    break;
+
+  case 9:
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[0];
+    break;
+
+  case 10:
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[0];
+    break;
+
+  case 11:
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[0];
+    break;
+
+  default:
+    statements_def
+    break;
+}
+
+};
+
+
 
 $(document).ready(function(){
 
