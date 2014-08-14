@@ -86,8 +86,7 @@ decQuotes = [];
 
 $(document).ready(function(){
 
-  alert (findQuote(todaysMonth, todaysDay));
-
+  $('.dateLine').html(todaysDate);
 
   // Created a function to toggle the class replace on and off of the textBox
 
@@ -97,4 +96,5 @@ $(document).ready(function(){
     $(".textBox").toggleClass('replace');
 
   });
+});
 });
