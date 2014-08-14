@@ -88,37 +88,44 @@ function findQuote (todaysMonth, todaysDay) {
   switch (todaysMonth) {
   // January
   case 0:
-    return (janQuotes[todaysDay -1]);
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[2];
     break;
 
   // February
   case 1:
-    return (febQuotes[todaysDay -1]);
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[2];
     break;
 
   // March
   case 2:
-    return (marQuotes[todaysDay -1]);
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[2];
     break;
 
   //April
   case 3:
-    return (aprQuotes[todaysDay -1]);
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[2];
     break;
 
   //May
   case 4:
-    return (mayQuotes[todaysDay -1]);
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[2];
     break;
 
   //June
   case 5:
-    return (junQuotes[todaysDay -1]);
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[2];
     break;
 
   //July
   case 6:
-    return (julQuotes[todaysDay -1]);
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[2];
     break;
 
   //August
@@ -129,22 +136,26 @@ function findQuote (todaysMonth, todaysDay) {
 
   //September
   case 8:
-    return (sepQuotes[todaysDay -1]);
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[2];
     break;
 
   //October
   case 9:
-    return (octQuotes[todaysDay -1]);
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[2];
     break;
 
   //November
   case 10:
-    return (novQuotes[todaysDay -1]);
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[2];
     break;
 
   //December
   case 11:
-    return (decQuotes[todaysDay -1]);
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[2];
     break;
 
   default:
@@ -159,31 +170,38 @@ function findHistoricYear (todaysMonth, todaysDay) {
 
   switch (todaysMonth) {
   case 0:
-    return (janQuotes[todaysDay -1]);
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[0];
     break;
 
   case 1:
-    return (febQuotes[todaysDay -1]);
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[0];
     break;
 
   case 2:
-    return (marQuotes[todaysDay -1]);
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[0];
     break;
 
   case 3:
-    return (aprQuotes[todaysDay -1]);
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[0];
     break;
 
   case 4:
-    return (mayQuotes[todaysDay -1]);
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[0];
     break;
 
   case 5:
-    return (junQuotes[todaysDay -1]);
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[0];
     break;
 
   case 6:
-    return (julQuotes[todaysDay -1]);
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[0];
     break;
 
   case 7:
@@ -192,19 +210,23 @@ function findHistoricYear (todaysMonth, todaysDay) {
     break;
 
   case 8:
-    return (sepQuotes[todaysDay -1]);
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[0];
     break;
 
   case 9:
-    return (octQuotes[todaysDay -1]);
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[0];
     break;
 
   case 10:
-    return (novQuotes[todaysDay -1]);
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[0];
     break;
 
   case 11:
-    return (decQuotes[todaysDay -1]);
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[0];
     break;
 
   default:
@@ -218,31 +240,38 @@ function findHistoricPerson (todaysMonth, todaysDay) {
 
   switch (todaysMonth) {
   case 0:
-    return (janQuotes[todaysDay -1]);
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[1];
     break;
 
   case 1:
-    return (febQuotes[todaysDay -1]);
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[1];
     break;
 
   case 2:
-    return (marQuotes[todaysDay -1]);
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[1];
     break;
 
   case 3:
-    return (aprQuotes[todaysDay -1]);
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[1];
     break;
 
   case 4:
-    return (mayQuotes[todaysDay -1]);
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[1];
     break;
 
   case 5:
-    return (junQuotes[todaysDay -1]);
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[1];
     break;
 
   case 6:
-    return (julQuotes[todaysDay -1]);
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[1];
     break;
 
   case 7:
@@ -251,19 +280,23 @@ function findHistoricPerson (todaysMonth, todaysDay) {
     break;
 
   case 8:
-    return (sepQuotes[todaysDay -1]);
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[1];
     break;
 
   case 9:
-    return (octQuotes[todaysDay -1]);
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[1];
     break;
 
   case 10:
-    return (novQuotes[todaysDay -1]);
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[1];
     break;
 
   case 11:
-    return (decQuotes[todaysDay -1]);
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[1];
     break;
 
   default:
@@ -273,6 +306,7 @@ function findHistoricPerson (todaysMonth, todaysDay) {
 
 };
 
+function previousDay (todaysMonth, todaysDay)
 
 $(document).ready(function(){
 
