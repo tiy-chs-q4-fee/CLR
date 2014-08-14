@@ -298,8 +298,8 @@ $(".homeButton").on("click", function(event){
 $('.bl-icon-close').on('click', function(event){
 
   event.preventDefault();
-  $('.textBox').removeClass('replace').css('transition', 'all 2s ease');
-  $('.mainPage').removeClass('zoomOut').css('transition', 'all 2s ease');
+  $('.textBox').removeClass('replace');
+  $('.mainPage').removeClass('zoomOut');
 
 
 });
