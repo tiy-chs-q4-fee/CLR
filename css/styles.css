@@ -23,23 +23,36 @@ body {
     font-size: 4em; }
   .mainPage p {
     font-size: 2em; }
+  .mainPage hr {
+    width: 80%; }
   .mainPage form {
+    padding-top: 20px;
     padding-bottom: 20px; }
     .mainPage form input {
       width: 350px;
       height: 50px;
       border-radius: 10px;
       font-size: 0.95em;
-      border: 1px solid #EB5055;
+      border: 2px solid white;
       background-color: #EB5055;
       cursor: pointer; }
+  .mainPage ul {
+    padding: 0px; }
+    .mainPage ul li {
+      list-style-type: none;
+      display: inline-block; }
 
 /* Made the textBox site off the screen so we could transition it in */
+/*style for the textBox, quote and close button*/
 .textBox {
-  width: 400px;
-  height: 300px;
-  margin-top: -2000px;
-  text-align: center; }
+  z-index: 99;
+  width: 300px;
+  height: 400px;
+  margin-top: 2000px;
+  margin-left: 300px;
+  text-align: center;
+  float: left;
+  /*button*/ }
   .textBox form {
     padding-bottom: 20px; }
     .textBox form input {
@@ -59,11 +72,18 @@ body {
   .textBox .quote {
     font-size: 1.5em; }
 
+/*CSS for quote container within textBox*/
 .badEvent {
   width: 80%;
   margin: 10%;
   margin-top: 2%;
   text-align: left; }
+
+.zoomOut {
+  transform: translateY(100%);
+  transform: scale(0.5);
+  opacity: 0;
+  transition: all 2s ease; }
 
 /* This is the class that we are adding to make textBox transition in */
 .replace {
