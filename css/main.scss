@@ -11,6 +11,8 @@ body {
   overflow: hidden;
 }
 
+/* styled the homePage */
+
 .mainPage {
   z-index: 100;
   background-color: #043D5D;
@@ -41,6 +43,8 @@ body {
     }
 }
 
+/* Made the textBox site off the screen so we could transition it in */
+
 .textBox {
   width: 400px;
   height: 300px;
@@ -49,6 +53,7 @@ body {
 
 }
 
+/* This is the class that we are adding to make textBox transition in */
 
 .replace {
   z-index: 101;
