@@ -144,7 +144,7 @@ function findQuote (todaysMonth, todaysDay) {
 
 //create empty variables for each month to hold the strings of quotes
 var janQuotes = [
-["1500", "The Portuguese explorer Pedro Alvares Cabral searches the coast of Brazil and claims the region for Portugal."], ["1905", "After a six-month siege, Russians surrender Port Arthur to the Japanese."], ["1521",  "Martin Luther is excommunicated from the Catholic Church."],
+"1500: The Portuguese explorer Pedro Alvares Cabral searches the coast of Brazil and claims the region for Portugal.", "1905: After a six-month siege, Russians surrender Port Arthur to the Japanese.", "1521: Martin Luther is excommunicated from the Catholic Church."],
 
 febQuotes = [],
 
@@ -172,21 +172,22 @@ $(document).ready(function(){
 
   $('.dateLine').html(homePageDateDisplay);
 
-  // Created a function to toggle the class replace on and off of the textBox
+// Created a function to toggle the class replace on and off of the textBox
 
-  $(".homeButton").on("click", function(event){
+$(".homeButton").on("click", function(event){
 
   event.preventDefault();
-  $(".mainPage").addClass("zoomOut");
-  $(".textBox").addClass('replace');
+  $('.mainPage').addClass('zoomOut');
+  $(".textBox").toggleClass('replace');
   $('.quote').text(findQuote (todaysMonth, todaysDay));
 
-  });
+});
 
-  $(".closeButton").on("click", function(event) {
+$('.closeButton').on('click', function(event){
 
-    event.preventDefault();
-    $(".textBox").removeClass("replace").css("transition", "all 2s ease");
-    $(".mainPage").removeClass("zoomOut").css("transition", "all 2s ease");
-  });
+  event.preventDefault();
+  $('.textBox').removeClass('replace').css('transition', 'all 2s ease');
+  $('.mainPage').removeClass('zoomOut').css('transition', 'all 2s ease');
+
+});
 });
