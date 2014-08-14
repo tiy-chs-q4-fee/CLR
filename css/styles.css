@@ -23,8 +23,6 @@ body {
     font-size: 4em; }
   .mainPage p {
     font-size: 2em; }
-  .mainPage hr {
-    width: 80%; }
   .mainPage form {
     padding-top: 20px;
     padding-bottom: 20px; }
@@ -64,11 +62,11 @@ body {
       border: 2px solid white;
       background-color: #043D5D;
       cursor: pointer; }
-  .textBox h2 {
+  .textBox h3 {
+    padding-top: 50px;
+    padding-bottom: 15px;
+    font-size: 2em;
     color: white; }
-  .textBox hr {
-    width: 80%;
-    color: teal; }
   .textBox .quote {
     font-size: 1.5em; }
 
