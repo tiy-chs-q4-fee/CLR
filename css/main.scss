@@ -22,25 +22,21 @@
   -webkit-font-smoothing: antialiased;
 }
 
-.bl-icon {
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  cursor: pointer;
-  color: white;
-  -webkit-font-smoothing: antialiased;
-}
-
 .bl-icon-close::before {
   content: "\e005";
 }
 
+.icon-sad::before {
+  content: "\e004";
+}
+
+.icon-happy::before {
+   content: "\e002";
+ }
+
+
 .bl-icon::before {
-  display: block;
+
   font-size: 2em;
   margin-bottom: 10px;
 }
@@ -75,17 +71,29 @@ bottom: 0px; */
     h2 {
       font-size: 4em;
       margin-top: 25px;
+      margin-bottom: 20px;
     }
     p {
       font-size: 2em;
+      margin-top: 10px;
+      margin-bottom: 10px;
     }
     button {
-      height: 50px;
       font-size: 1.25em;
-      border-radius: 10px;
-      border: 1px solid #EB5055;
-      background-color: #EB5055;
+      background-color: #043D5D;
+      border: none;
       cursor: pointer;
+      padding: 0px;
+      margin-bottom: 0px;
+    }
+    .homeButtonContainer p {
+      font-size: 1.45em;
+    }
+
+    .homeButton {
+      height: 36px;
+      width:26px;
+      font-size: 2em;
     }
     .by {
       margin-top: 150px;
@@ -123,7 +131,7 @@ bottom: 0px; */
       position: absolute;
       top: 10px;
       right: 10px;
-      font-size: 1.5em;
+      font-size: .8em;
     }
 
     span.bl-icon:hover {

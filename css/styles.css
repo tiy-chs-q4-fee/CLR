@@ -20,6 +20,16 @@
 .bl-icon-close::before {
   content: "\e005"; }
 
+.icon-sad::before {
+  content: "\e004"; }
+
+.icon-happy::before {
+  content: "\e002"; }
+
+.bl-icon::before {
+  font-size: 2em;
+  margin-bottom: 10px; }
+
 html {
   margin-top: -20px; }
 
@@ -45,16 +55,25 @@ right: 0px;
 bottom: 0px; */ }
   .mainPage h2 {
     font-size: 4em;
-    margin-top: 25px; }
+    margin-top: 25px;
+    margin-bottom: 20px; }
   .mainPage p {
-    font-size: 2em; }
+    font-size: 2em;
+    margin-top: 10px;
+    margin-bottom: 10px; }
   .mainPage button {
-    height: 50px;
     font-size: 1.25em;
-    border-radius: 10px;
-    border: 1px solid #EB5055;
-    background-color: #EB5055;
-    cursor: pointer; }
+    background-color: #043D5D;
+    border: none;
+    cursor: pointer;
+    padding: 0px;
+    margin-bottom: 0px; }
+  .mainPage .homeButtonContainer p {
+    font-size: 1.45em; }
+  .mainPage .homeButton {
+    height: 36px;
+    width: 26px;
+    font-size: 2em; }
   .mainPage .by {
     margin-top: 150px;
     font-size: 1.05em; }
@@ -83,7 +102,7 @@ bottom: 0px; */ }
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: 1.5em; }
+    font-size: 0.8em; }
   .textBox span.bl-icon:hover {
     color: #1488C8; }
   .textBox h3 {
