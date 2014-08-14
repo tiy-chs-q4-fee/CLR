@@ -45,6 +45,7 @@ body {
 
 
 /* Made the textBox site off the screen so we could transition it in */
+/*style for the textBox, quote and close button*/
 
 .textBox {
   width: 400px;
@@ -77,6 +78,9 @@ body {
     }
 
 }
+
+/*CSS for quote container within textBox*/
+
 .badEvent{
   width:80%;
   margin:10%;
