@@ -43,13 +43,18 @@ body {
     }
 }
 
+<<<<<<< HEAD
 
 /* Made the textBox site off the screen so we could transition it in */
 /*style for the textBox, quote and close button*/
+=======
+/* Made the textBox site off the screen so we could transition it in */
+>>>>>>> 86a093fb7cd701a275cf24a22f10b27110fc1d3f
 
 .textBox {
   width: 400px;
   height: 300px;
+<<<<<<< HEAD
 
   margin-top: -2000px;
   text-align: center;
@@ -89,6 +94,13 @@ body {
   text-align:left;
 }
 
+=======
+  margin-top: -2000px;
+  text-align: center;
+
+}
+
+>>>>>>> 86a093fb7cd701a275cf24a22f10b27110fc1d3f
 /* This is the class that we are adding to make textBox transition in */
 
 .replace {
@@ -104,5 +116,8 @@ body {
   background-color: #EB5055;
   transform: translateY(0px);
   transition: all 2s ease;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 86a093fb7cd701a275cf24a22f10b27110fc1d3f
 }
