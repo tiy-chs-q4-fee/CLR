@@ -94,6 +94,7 @@ $(".homeButton").on("click", function(event){
 
   event.preventDefault();
   $(".textBox").toggleClass('replace');
+  $('.quote').text(findQuote (todaysMonth, todaysDay));
 
 });
 });
