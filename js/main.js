@@ -86,6 +86,78 @@ var homePageDateDisplay = thisMonthName + " " + todaysDay + ", " + todaysYear;
 function findQuote (todaysMonth, todaysDay) {
 
   switch (todaysMonth) {
+  // January
+  case 0:
+    return (janQuotes[todaysDay -1]);
+    break;
+
+  // February
+  case 1:
+    return (febQuotes[todaysDay -1]);
+    break;
+
+  // March
+  case 2:
+    return (marQuotes[todaysDay -1]);
+    break;
+
+  //April
+  case 3:
+    return (aprQuotes[todaysDay -1]);
+    break;
+
+  //May
+  case 4:
+    return (mayQuotes[todaysDay -1]);
+    break;
+
+  //June
+  case 5:
+    return (junQuotes[todaysDay -1]);
+    break;
+
+  //July
+  case 6:
+    return (julQuotes[todaysDay -1]);
+    break;
+
+  //August
+  case 7:
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[2];
+    break;
+
+  //September
+  case 8:
+    return (sepQuotes[todaysDay -1]);
+    break;
+
+  //October
+  case 9:
+    return (octQuotes[todaysDay -1]);
+    break;
+
+  //November
+  case 10:
+    return (novQuotes[todaysDay -1]);
+    break;
+
+  //December
+  case 11:
+    return (decQuotes[todaysDay -1]);
+    break;
+
+  default:
+    statements_def
+    break;
+}
+
+};
+
+
+function findHistoricYear (todaysMonth, todaysDay) {
+
+  switch (todaysMonth) {
   case 0:
     return (janQuotes[todaysDay -1]);
     break;
@@ -115,7 +187,67 @@ function findQuote (todaysMonth, todaysDay) {
     break;
 
   case 7:
-    return (augQuotes[todaysDay -1]);
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[0];
+    break;
+
+  case 8:
+    return (sepQuotes[todaysDay -1]);
+    break;
+
+  case 9:
+    return (octQuotes[todaysDay -1]);
+    break;
+
+  case 10:
+    return (novQuotes[todaysDay -1]);
+    break;
+
+  case 11:
+    return (decQuotes[todaysDay -1]);
+    break;
+
+  default:
+    statements_def
+    break;
+}
+
+};
+
+function findHistoricPerson (todaysMonth, todaysDay) {
+
+  switch (todaysMonth) {
+  case 0:
+    return (janQuotes[todaysDay -1]);
+    break;
+
+  case 1:
+    return (febQuotes[todaysDay -1]);
+    break;
+
+  case 2:
+    return (marQuotes[todaysDay -1]);
+    break;
+
+  case 3:
+    return (aprQuotes[todaysDay -1]);
+    break;
+
+  case 4:
+    return (mayQuotes[todaysDay -1]);
+    break;
+
+  case 5:
+    return (junQuotes[todaysDay -1]);
+    break;
+
+  case 6:
+    return (julQuotes[todaysDay -1]);
+    break;
+
+  case 7:
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[1];
     break;
 
   case 8:
@@ -142,32 +274,6 @@ function findQuote (todaysMonth, todaysDay) {
 };
 
 
-//create empty variables for each month to hold the strings of quotes
-var janQuotes = [
-"1500: The Portuguese explorer Pedro Alvares Cabral searches the coast of Brazil and claims the region for Portugal.", "1905: After a six-month siege, Russians surrender Port Arthur to the Japanese.", "1521: Martin Luther is excommunicated from the Catholic Church."],
-
-febQuotes = [],
-
-marQuotes = [],
-
-aprQuotes = [],
-
-mayQuotes = [],
-
-junQuotes = [],
-
-julQuotes = [],
-
-augQuotes = ["Day 1", "Day 2", "Day 3", "Day 4", "Day 5", "Day 6", "Day 7", "Day 8", "Day 9", "Day 10", "Day 11", "Day 12", "On this day in 1961, Berlin was divided as East Germany sealed off the border between the city's eastern and western sectors in order to halt the flight of refugees.", "Nothing bad happened on this day, your day is actually the worst in history!", "Day 15", "Day 16", "Day 17", "Day 18", "Day 19", "Day 20", "Day 21", "Day 22", "Day 23", "Day 24", "Day 25", "Day 26", "Day 27", "Day 28", "Day 29", "Day 30", "Day 31" ],
-sepQuotes = [],
-
-octQuotes = [],
-
-novQuotes = [];
-
-decQuotes = [];
-
-
 $(document).ready(function(){
 
   $('.dateLine').html(homePageDateDisplay);
@@ -180,6 +286,8 @@ $(".homeButton").on("click", function(event){
   $('.mainPage').addClass('zoomOut');
   $(".textBox").toggleClass('replace');
   $('.quote').text(findQuote (todaysMonth, todaysDay));
+  $('.historicalYear').text(findHistoricYear (todaysMonth, todaysDay));
+  $('.historicalPerson').text(findHistoricPerson (todaysMonth, todaysDay));
 
 });
 
