@@ -93,8 +93,16 @@ $(document).ready(function(){
   $(".homeButton").on("click", function(event){
 
   event.preventDefault();
-  $(".textBox").toggleClass('replace');
+  $(".mainPage").addClass("zoomOut");
+  $(".textBox").addClass('replace');
   $('.quote').text(findQuote (todaysMonth, todaysDay));
 
+  });
+
+  $(".closeButton").on("click", function(event) {
+
+    event.preventDefault();
+    $(".textBox").removeClass("replace").css("transition", "all 2s ease");
+    $(".mainPage").removeClass("zoomOut").css("transition", "all 2s ease");
   });
 });
