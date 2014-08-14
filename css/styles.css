@@ -53,6 +53,11 @@ body {
       cursor: pointer; }
   .textBox h2 {
     color: white; }
+  .textBox hr {
+    width: 80%;
+    color: teal; }
+  .textBox .quote {
+    font-size: 1.5em; }
 
 .badEvent {
   width: 80%;
