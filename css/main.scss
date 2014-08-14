@@ -18,10 +18,12 @@ body {
   background-color: #043D5D;
   color: white;
   text-align: center;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
+  width:100%;
+  height: 100%;
+/*   top: 0px;
+left: 0px;
+right: 0px;
+bottom: 0px; */
 
     h2 {
       font-size: 4em;
@@ -29,24 +31,29 @@ body {
     p {
       font-size: 2em;
     }
-    form {
+    button {
       padding-top: 20px;
       padding-bottom: 20px;
-        input {
-          width: 350px;
-          height: 50px;
-          border-radius: 10px;
-          font-size: .95em;
-          border: 2px solid white;
-          background-color: #EB5055;
-          cursor: pointer;
-        }
+      width: 40%;
+      height: 50px;
+      border-radius: 10px;
+      border: 2px solid white;
+      background-color: #EB5055;
+      cursor: pointer;
+    }
+    .by {
+      margin-top: 80px;
+      font-size: 1.05em;
     }
     ul {
     padding: 0px;
       li{
         list-style-type: none;
         display: inline-block;
+        img {
+          width: 100px;
+          border-radius: 10px;
+        }
       }
     }
 }
@@ -59,12 +66,13 @@ body {
 
 .textBox {
   z-index: 99;
-  width: 300px;
+  position: absolute;
+  width: 100%;
   height: 400px;
-  margin-top: 2000px;
-  margin-left: 300px;
+  top: 2000px;
   text-align: center;
   float: left;
+  transition: all 2s ease;
   /*button*/
     form {
       padding-bottom: 20px;
@@ -116,7 +124,7 @@ body {
 .replace {
   z-index: 101;
   margin: 0px;
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 100%;
   top: 0px;
