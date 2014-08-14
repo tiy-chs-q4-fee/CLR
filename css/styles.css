@@ -22,14 +22,13 @@ left: 0px;
 right: 0px;
 bottom: 0px; */ }
   .mainPage h2 {
-    font-size: 4em; }
+    font-size: 4em;
+    margin-top: 25px; }
   .mainPage p {
     font-size: 2em; }
   .mainPage button {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 40%;
     height: 50px;
+    font-size: 1.25em;
     border-radius: 10px;
     border: 2px solid white;
     background-color: #EB5055;
@@ -70,8 +69,7 @@ bottom: 0px; */ }
       background-color: #043D5D;
       cursor: pointer; }
   .textBox h3 {
-    padding-top: 50px;
-    padding-bottom: 15px;
+    margin-top: 25px;
     font-size: 2em;
     color: white; }
   .textBox .quote {
@@ -79,10 +77,9 @@ bottom: 0px; */ }
 
 /*CSS for quote container within textBox*/
 .badEvent {
-  width: 80%;
-  margin: 10%;
-  margin-top: 2%;
-  text-align: left; }
+  width: 100%;
+  text-align: center;
+  margin-top: 5px; }
 
 .zoomOut {
   transform: translateY(100%);
