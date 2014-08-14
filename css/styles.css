@@ -9,6 +9,7 @@ body {
   background-color: #043D5D;
   overflow: hidden; }
 
+/* styled the homePage */
 .mainPage {
   z-index: 100;
   background-color: #043D5D;
@@ -33,12 +34,46 @@ body {
       background-color: #EB5055;
       cursor: pointer; }
 
+/* Made the textBox site off the screen so we could transition it in */
+/*style for the textBox, quote and close button*/
+/* Made the textBox site off the screen so we could transition it in */
 .textBox {
   width: 400px;
   height: 300px;
   margin-top: -2000px;
-  text-align: center; }
+  text-align: center;
+  /*button*/ }
+  .textBox form {
+    padding-bottom: 20px; }
+    .textBox form input {
+      width: 150px;
+      height: 50px;
+      color: white;
+      border-radius: 10px;
+      font-size: 0.95em;
+      border: 2px solid white;
+      background-color: #043D5D;
+      cursor: pointer; }
+  .textBox h3 {
+    padding-top: 50px;
+    padding-bottom: 15px;
+    font-size: 2em;
+    color: white;
+    border-bottom: 2px solid teal; }
+  .textBox hr {
+    width: 80%;
+    color: white; }
+  .textBox .quote {
+    font-size: 1.5em; }
 
+/*CSS for quote container within textBox*/
+.badEvent {
+  width: 80%;
+  margin: 10%;
+  margin-top: 2%;
+  text-align: left; }
+
+/* This is the class that we are adding to make textBox transition in */
 .replace {
   z-index: 101;
   margin: 0px;
