@@ -8,8 +8,7 @@ var todaysDate = new Date();
 var todaysMonth = todaysDate.getMonth();
 
 // Next get the day of the month and assign it to a new variable (called: todaysDay)
-var todaysDay
- = todaysDate.getDate();
+var todaysDay = todaysDate.getDate();
 
 // create a function to get the quote from the right month and date
 function findQuote (todaysMonth, todaysDay) {
