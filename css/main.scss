@@ -1,0 +1,38 @@
+html {
+  margin-top: -20px;
+}
+
+body {
+  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Abel', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.mainPage {
+  background-color: #043D5D;
+  color: white;
+  text-align: center;
+  width: 100%;
+  border: 0px;
+  margin: 0px;
+  float: left;
+  clear: both;
+    h2 {
+      font-size: 4em;
+    }
+    p {
+      font-size: 2em;
+    }
+    form {
+      padding-bottom: 20px;
+        input {
+          width: 350px;
+          height: 50px;
+          border-radius: 10px;
+          font-size: .95em;
+          border: 1px solid #EB5055;
+          background-color: #EB5055;
+        }
+    }
+}
