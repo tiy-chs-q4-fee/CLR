@@ -44,8 +44,15 @@ body {
 }
 
 
+
+
 /* Made the textBox site off the screen so we could transition it in */
 /*style for the textBox, quote and close button*/
+
+
+/* Made the textBox site off the screen so we could transition it in */
+/*style for the textBox, quote and close button*/
+
 
 .textBox {
   width: 400px;
@@ -67,13 +74,17 @@ body {
           cursor: pointer;
         }
     }
-    h2{
+
+    h3{
+      padding-top:50px;
+      padding-bottom:15px;
+      font-size:2em;
       color:white;
+      border-bottom:2px solid teal;
     }
-    hr{
-      width:80%;
-      color:teal;
-    }
+
+
+
     .quote{
       font-size: 1.5em;
     }
@@ -88,6 +99,7 @@ body {
   margin-top:2%;
   text-align:left;
 }
+
 
 /* This is the class that we are adding to make textBox transition in */
 

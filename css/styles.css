@@ -35,11 +35,15 @@ body {
       cursor: pointer; }
 
 /* Made the textBox site off the screen so we could transition it in */
+/*style for the textBox, quote and close button*/
+/* Made the textBox site off the screen so we could transition it in */
+/*style for the textBox, quote and close button*/
 .textBox {
   width: 400px;
   height: 300px;
   margin-top: -2000px;
-  text-align: center; }
+  text-align: center;
+  /*button*/ }
   .textBox form {
     padding-bottom: 20px; }
     .textBox form input {
@@ -51,14 +55,16 @@ body {
       border: 2px solid white;
       background-color: #043D5D;
       cursor: pointer; }
-  .textBox h2 {
-    color: white; }
-  .textBox hr {
-    width: 80%;
-    color: teal; }
+  .textBox h3 {
+    padding-top: 50px;
+    padding-bottom: 15px;
+    font-size: 2em;
+    color: white;
+    border-bottom: 2px solid teal; }
   .textBox .quote {
     font-size: 1.5em; }
 
+/*CSS for quote container within textBox*/
 .badEvent {
   width: 80%;
   margin: 10%;
