@@ -170,6 +170,10 @@ decQuotes = [];
 
 $(document).ready(function(){
 
+  $('body').on('touchmove', function(event){
+    event.preventDefault();
+  });
+
   $('.dateLine').html(homePageDateDisplay);
 
   // Created a function to toggle the class replace on and off of the textBox
@@ -186,7 +190,8 @@ $(document).ready(function(){
   $(".closeButton").on("click", function(event) {
 
     event.preventDefault();
-    $(".textBox").removeClass("replace").css("transition", "all 2s ease");
+    $(".textBox").removeClass("replace");
+    $(".textBox").toggleClass("transform");
     $(".mainPage").removeClass("zoomOut").css("transition", "all 2s ease");
   });
 });

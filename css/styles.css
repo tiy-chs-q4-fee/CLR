@@ -15,41 +15,48 @@ body {
   background-color: #043D5D;
   color: white;
   text-align: center;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px; }
+  width: 100%;
+  height: 100%;
+  /*   top: 0px;
+left: 0px;
+right: 0px;
+bottom: 0px; */ }
   .mainPage h2 {
     font-size: 4em; }
   .mainPage p {
     font-size: 2em; }
-  .mainPage form {
+  .mainPage button {
     padding-top: 20px;
-    padding-bottom: 20px; }
-    .mainPage form input {
-      width: 350px;
-      height: 50px;
-      border-radius: 10px;
-      font-size: 0.95em;
-      border: 2px solid white;
-      background-color: #EB5055;
-      cursor: pointer; }
+    padding-bottom: 20px;
+    width: 40%;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: #EB5055;
+    cursor: pointer; }
+  .mainPage .by {
+    margin-top: 80px;
+    font-size: 1.05em; }
   .mainPage ul {
     padding: 0px; }
     .mainPage ul li {
       list-style-type: none;
       display: inline-block; }
+      .mainPage ul li img {
+        width: 100px;
+        border-radius: 10px; }
 
 /* Made the textBox site off the screen so we could transition it in */
 /*style for the textBox, quote and close button*/
 .textBox {
   z-index: 99;
-  width: 300px;
+  position: absolute;
+  width: 100%;
   height: 400px;
-  margin-top: 2000px;
-  margin-left: 300px;
+  top: 2000px;
   text-align: center;
   float: left;
+  transition: all 2s ease;
   /*button*/ }
   .textBox form {
     padding-bottom: 20px; }
@@ -87,7 +94,7 @@ body {
 .replace {
   z-index: 101;
   margin: 0px;
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 100%;
   top: 0px;
