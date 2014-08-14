@@ -172,13 +172,21 @@ $(document).ready(function(){
 
   $('.dateLine').html(homePageDateDisplay);
 
-// Created a function to toggle the class replace on and off of the textBox
+  // Created a function to toggle the class replace on and off of the textBox
 
-$(".homeButton").on("click", function(event){
+  $(".homeButton").on("click", function(event){
 
   event.preventDefault();
-  $(".textBox").toggleClass('replace');
+  $(".mainPage").addClass("zoomOut");
+  $(".textBox").addClass('replace');
   $('.quote').text(findQuote (todaysMonth, todaysDay));
 
-});
+  });
+
+  $(".closeButton").on("click", function(event) {
+
+    event.preventDefault();
+    $(".textBox").removeClass("replace").css("transition", "all 2s ease");
+    $(".mainPage").removeClass("zoomOut").css("transition", "all 2s ease");
+  });
 });

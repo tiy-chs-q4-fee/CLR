@@ -30,24 +30,27 @@ body {
       font-size: 2em;
     }
     form {
+      padding-top: 20px;
       padding-bottom: 20px;
         input {
           width: 350px;
           height: 50px;
           border-radius: 10px;
           font-size: .95em;
-          border: 1px solid #EB5055;
+          border: 2px solid white;
           background-color: #EB5055;
           cursor: pointer;
         }
     }
+    ul {
+    padding: 0px;
+      li{
+        list-style-type: none;
+        display: inline-block;
+      }
+    }
 }
 
-
-
-
-/* Made the textBox site off the screen so we could transition it in */
-/*style for the textBox, quote and close button*/
 
 
 /* Made the textBox site off the screen so we could transition it in */
@@ -55,11 +58,13 @@ body {
 
 
 .textBox {
-  width: 400px;
-  height: 300px;
-
-  margin-top: -2000px;
+  z-index: 99;
+  width: 300px;
+  height: 400px;
+  margin-top: 2000px;
+  margin-left: 300px;
   text-align: center;
+  float: left;
   /*button*/
     form {
       padding-bottom: 20px;
@@ -80,7 +85,6 @@ body {
       padding-bottom:15px;
       font-size:2em;
       color:white;
-      border-bottom:2px solid teal;
     }
 
 
@@ -100,6 +104,12 @@ body {
   text-align:left;
 }
 
+.zoomOut {
+  transform: translateY(100%);
+  transform: scale(.5);
+  opacity: 0;
+  transition: all 2s ease;
+}
 
 /* This is the class that we are adding to make textBox transition in */
 
