@@ -1,13 +1,9 @@
 @font-face {
   font-family: 'icomoon';
-  src:url('../fonts/icomoon.eot');
-  src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.woff') format('woff'),
-    url('../fonts/icomoon.ttf') format('truetype'),
-    url('../fonts/icomoon.svg#icomoon') format('svg');
+  src: url('../fonts/icomoon.eot');
+  src: url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'), url('../fonts/icomoon.woff') format('woff'), url('../fonts/icomoon.ttf') format('truetype'), url('../fonts/icomoon.svg#icomoon') format('svg');
   font-weight: normal;
-  font-style: normal;
-}
+  font-style: normal; }
 
 .bl-icon {
   font-family: 'icomoon';
@@ -19,18 +15,20 @@
   line-height: 1;
   cursor: pointer;
   color: white;
-  -webkit-font-smoothing: antialiased;
-}
+  -webkit-font-smoothing: antialiased; }
 
 .bl-icon-close::before {
-  content: "\e005";
-}
+  content: "\e005"; }
+
+.icon-sad::before {
+  content: "\e004"; }
+
+.icon-happy::before {
+  content: "\e002"; }
 
 .bl-icon::before {
-  display: block;
   font-size: 2em;
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; }
 
 html {
   margin-top: -20px; }
@@ -56,20 +54,28 @@ left: 0px;
 right: 0px;
 bottom: 0px; */ }
   .mainPage h2 {
-    font-size: 4em; }
+    font-size: 4em;
+    margin-top: 25px;
+    margin-bottom: 20px; }
   .mainPage p {
-    font-size: 2em; }
+    font-size: 2em;
+    margin-top: 10px;
+    margin-bottom: 10px; }
   .mainPage button {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 40%;
-    height: 50px;
-    border-radius: 10px;
-    border: 2px solid white;
-    background-color: #EB5055;
-    cursor: pointer; }
+    font-size: 1.25em;
+    background-color: #043D5D;
+    border: none;
+    cursor: pointer;
+    padding: 0px;
+    margin-bottom: 0px; }
+  .mainPage .homeButtonContainer p {
+    font-size: 1.45em; }
+  .mainPage .homeButton {
+    height: 36px;
+    width: 26px;
+    font-size: 2em; }
   .mainPage .by {
-    margin-top: 80px;
+    margin-top: 150px;
     font-size: 1.05em; }
   .mainPage ul {
     padding: 0px; }
@@ -77,7 +83,7 @@ bottom: 0px; */ }
       list-style-type: none;
       display: inline-block; }
       .mainPage ul li img {
-        width: 100px;
+        width: 50px;
         border-radius: 10px; }
 
 /* Made the textBox site off the screen so we could transition it in */
@@ -90,33 +96,28 @@ bottom: 0px; */ }
   top: 2000px;
   text-align: center;
   float: left;
-  transition: all 2s ease;
+  transition: all 3s ease;
   /*button*/ }
-  .textBox form {
-    padding-bottom: 20px; }
-    .textBox form input {
-      width: 150px;
-      height: 50px;
-      color: white;
-      border-radius: 10px;
-      font-size: 0.95em;
-      border: 2px solid white;
-      background-color: #043D5D;
-      cursor: pointer; }
+  .textBox span.bl-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 0.8em; }
+  .textBox span.bl-icon:hover {
+    color: #1488C8; }
   .textBox h3 {
-    padding-top: 50px;
-    padding-bottom: 15px;
     font-size: 2em;
-    color: white; }
+    color: white;
+    margin: 0px 25px;
+    margin-top: 35px; }
   .textBox .quote {
     font-size: 1.5em; }
 
 /*CSS for quote container within textBox*/
 .badEvent {
-  width: 80%;
-  margin: 10%;
-  margin-top: 2%;
-  text-align: left; }
+  width: 100%;
+  text-align: center;
+  margin-top: 5px; }
 
 .zoomOut {
   transform: translateY(100%);

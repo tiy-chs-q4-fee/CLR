@@ -548,6 +548,7 @@ $(document).ready(function(){
 
 // Created a function to toggle the class replace on and off of the textBox
 
+
 $(".homeButton").on("click", function(event){
 
   event.preventDefault();
@@ -560,11 +561,17 @@ $(".homeButton").on("click", function(event){
 });
 
 $('.bl-icon-close').on('click', function(event){
-
   event.preventDefault();
-  $('.textBox').removeClass('replace').css('transition', 'all 2s ease');
-  $('.mainPage').removeClass('zoomOut').css('transition', 'all 2s ease');
+  $('.textBox').removeClass('replace').css("transition", "all 2s ease");
+  $('.mainPage').removeClass('zoomOut').css("transition", "all 2s ease");
+});
 
+
+$('.homeButton').on('mouseover', function(event){
+  $(this).find(".bl-icon").removeClass("icon-sad").addClass("icon-happy");
+
+}).on('mouseout', function() {
+  $(this).find(".bl-icon").removeClass("icon-happy").addClass("icon-sad");
 
 });
 
