@@ -42,7 +42,8 @@
 }
 
 html {
-  margin-top: -20px;
+  margin-top: 0px;
+  background-color: #043D5D;
 }
 
 body {
@@ -51,7 +52,7 @@ body {
   margin: 0px;
   padding: 0px;
   background-color: #043D5D;
-  overflow: hidden;
+/*   overflow: hidden; */
 }
 
 /* styled the homePage */
@@ -63,6 +64,7 @@ body {
   text-align: center;
   width:100%;
   height: 100%;
+  min-height: 480px;
 /*   top: 0px;
 left: 0px;
 right: 0px;
@@ -70,7 +72,7 @@ bottom: 0px; */
 
     h2 {
       font-size: 4em;
-      margin-top: 25px;
+      margin-top: 0px;
       margin-bottom: 20px;
     }
     p {
@@ -95,6 +97,24 @@ bottom: 0px; */
       width:26px;
       font-size: 2em;
     }
+
+    .by {
+      margin-top: 15px;
+      font-size: 1.05em;
+    }
+    ul {
+    padding: 0px;
+    margin-bottom: 0px;
+      li{
+        list-style-type: none;
+        display: inline-block;
+        img {
+          width: 50px;
+          border-radius: 10px;
+        }
+      }
+    }
+
     .copyright {
       font-size: .7em;
     }
@@ -102,7 +122,6 @@ bottom: 0px; */
       margin-top: 250px;
       display: inline-block;
       width:50px;
-
     }
     // .by {
     //   margin-top: 150px;
@@ -127,14 +146,16 @@ bottom: 0px; */
 
 
 .textBox {
-  z-index: 99;
+  z-index: 101;
   position: absolute;
   width: 100%;
-  height: 400px;
-  top: 2000px;
+  height: 0px;
+  top: 100%;
+  overflow:hidden;
   text-align: center;
   float: left;
-  transition: all 3s ease;
+  transition: all 1s ease;
+
   /*button*/
     span.bl-icon {
       position: absolute;
@@ -178,17 +199,14 @@ bottom: 0px; */
 /* This is the class that we are adding to make textBox transition in */
 
 .replace {
-  z-index: 101;
   margin: 0px;
   position: absolute;
   width: 100%;
   height: 100%;
+  min-height: 480px;
   top: 0px;
   left: 0px;
-  right: 0px;
-  bottom: 0px;
   background-color: #EB5055;
   transform: translateY(0px);
   transition: all 2s ease;
-
 }
