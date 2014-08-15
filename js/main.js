@@ -83,7 +83,7 @@ var homePageDateDisplay = thisMonthName + " " + todaysDay + ", " + todaysYear;
 
 
 // create a function to get the quote from the right month and date
-function findQuote (month, dayay) {
+function findQuote (month, day) {
 
   switch (month) {
   // January
@@ -540,9 +540,9 @@ function findPreviousDayHistoricPerson (month, day) {
 
 $(document).ready(function(){
 
-  $('body').on('touchmove', function(event){
-    event.preventDefault();
-  });
+  // $('.textBox').on('touchmove', function(event){
+  //   event.preventDefault();
+  // });
 
   $('.dateLine').html(homePageDateDisplay);
 
@@ -554,6 +554,7 @@ $(".homeButton").on("click", function(event){
   event.preventDefault();
   $('.mainPage').addClass('zoomOut');
   $(".textBox").toggleClass('replace');
+  $("html, body").animate({ scrollTop: 0 }, "slow");
   $('.quote').text(findQuote (todaysMonth, todaysDay));
   $('.historicalYear').text(findHistoricYear (todaysMonth, todaysDay));
   $('.historicalPerson').text(findHistoricPerson (todaysMonth, todaysDay));

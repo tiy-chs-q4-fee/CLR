@@ -407,7 +407,7 @@ decQuotes = [
 ["Day 12"],
 ["1961", "People of Berlin", "Berlin was divided as East Germany sealed off the border between the city's eastern and western sectors in order to halt the flight of refugees."],
 ["1901", "S.S. Islander", "hits an iceberg near Alaska and sinks!"],
-["Day 15"],
+["2014", "Will Gallop", "Lost in Code Wars to Ryan Huber!"],
 ["Day 16"],
 ["Day 17"],
 ["Day 18"],
