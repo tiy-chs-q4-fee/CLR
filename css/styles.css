@@ -74,17 +74,12 @@ bottom: 0px; */ }
     height: 36px;
     width: 26px;
     font-size: 2em; }
-  .mainPage .by {
-    margin-top: 150px;
-    font-size: 1.05em; }
-  .mainPage ul {
-    padding: 0px; }
-    .mainPage ul li {
-      list-style-type: none;
-      display: inline-block; }
-      .mainPage ul li img {
-        width: 50px;
-        border-radius: 10px; }
+  .mainPage .copyright {
+    font-size: 0.7em; }
+  .mainPage img {
+    margin-top: 250px;
+    display: inline-block;
+    width: 50px; }
 
 /* Made the textBox site off the screen so we could transition it in */
 /*style for the textBox, quote and close button*/
