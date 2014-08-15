@@ -26,8 +26,17 @@
   content: "\e005";
 }
 
+.icon-sad::before {
+  content: "\e004";
+}
+
+.icon-happy::before {
+   content: "\e002";
+ }
+
+
 .bl-icon::before {
-  display: block;
+
   font-size: 2em;
   margin-bottom: 10px;
 }
@@ -61,22 +70,33 @@ bottom: 0px; */
 
     h2 {
       font-size: 4em;
+      margin-top: 25px;
+      margin-bottom: 20px;
     }
     p {
       font-size: 2em;
+      margin-top: 10px;
+      margin-bottom: 10px;
     }
     button {
-      padding-top: 20px;
-      padding-bottom: 20px;
-      width: 40%;
-      height: 50px;
-      border-radius: 10px;
-      border: 2px solid white;
-      background-color: #EB5055;
+      font-size: 1.25em;
+      background-color: #043D5D;
+      border: none;
       cursor: pointer;
+      padding: 0px;
+      margin-bottom: 0px;
+    }
+    .homeButtonContainer p {
+      font-size: 1.45em;
+    }
+
+    .homeButton {
+      height: 36px;
+      width:26px;
+      font-size: 2em;
     }
     .by {
-      margin-top: 80px;
+      margin-top: 150px;
       font-size: 1.05em;
     }
     ul {
@@ -85,13 +105,12 @@ bottom: 0px; */
         list-style-type: none;
         display: inline-block;
         img {
-          width: 100px;
+          width: 50px;
           border-radius: 10px;
         }
       }
     }
 }
-
 
 
 /* Made the textBox site off the screen so we could transition it in */
@@ -106,30 +125,25 @@ bottom: 0px; */
   top: 2000px;
   text-align: center;
   float: left;
-  transition: all 2s ease;
+  transition: all 3s ease;
   /*button*/
-    form {
-      padding-bottom: 20px;
-        input {
-          width: 150px;
-          height: 50px;
-          color:white;
-          border-radius: 10px;
-          font-size: .95em;
-          border: 2px solid white;
-          background-color: #043D5D;
-          cursor: pointer;
-        }
+    span.bl-icon {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: .8em;
+    }
+
+    span.bl-icon:hover {
+      color: #1488C8;
     }
 
     h3{
-      padding-top:50px;
-      padding-bottom:15px;
       font-size:2em;
       color:white;
+      margin: 0px 25px;
+      margin-top: 35px;
     }
-
-
 
     .quote{
       font-size: 1.5em;
@@ -140,10 +154,9 @@ bottom: 0px; */
 /*CSS for quote container within textBox*/
 
 .badEvent{
-  width:80%;
-  margin:10%;
-  margin-top:2%;
-  text-align:left;
+  width:100%;
+  text-align: center;
+  margin-top: 5px;
 }
 
 .zoomOut {

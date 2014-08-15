@@ -3,7 +3,6 @@
 <head>
 
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, intial-scale=1">
   <title>Document</title>
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
   <link href='http://fonts.googleapis.com/css?family=Abel|Shadows+Into+Light' rel='stylesheet' type='text/css'>
@@ -18,9 +17,13 @@
     <h2 class='dateLine'>This would be the date!</h2>
     <p>Do you really think that you are having the worst day ever?</p>
     <!-- Created a form so we can have the user be redirected to the page with our results when they click on the button. Action= where we want to send them. type=submit. value=what text we want to show. -->
-    <button class="homeButton">
-      Click to see who has had a worse day!
-    </button>
+    <div class="homeButtonContainer">
+      <p>Want to turn your frown upside down?</p>
+    <span class="homeButton">
+      <span class="bl-icon icon-home icon-sad"></span>
+    </span>
+    </div>
+
     <p class="by">Created By:</p>
     <ul>
       <li><a href="https://github.com/rphuber" target=_blank><img src="https://avatars2.githubusercontent.com/u/8245890?v=2&s=460" alt=""></a></li>
@@ -30,10 +33,8 @@
   </div>
     <!-- creating the div to hold all of the text box contents -->
   <div class="textBox">
-      <a class="boxclose" id="boxclose"></a>
+    <span class="bl-icon bl-icon-close"></span>
       <!-- h3 title with changing date -->
-
-
       <h3>On this day in <span class="historicalYear">(fill date)</span>, <span class='historicalPerson'>this person</span> had a really terrible day.</h3>
 
       <!-- created the div to hold the varying information of bad day quaote -->
@@ -42,9 +43,6 @@
           <p class='quote'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </div>
-
-        <!-- changed button to fit the form Chris made earlier -->
-        <span class="bl-icon bl-icon-close"></span>
 
   </div>
   </div>
