@@ -1,41 +1,149 @@
-/*
-Syntax error: Invalid CSS after "}": expected "}", was ""
-        on line 216 of main.scss
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot');
+  src: url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'), url('../fonts/icomoon.woff') format('woff'), url('../fonts/icomoon.ttf') format('truetype'), url('../fonts/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal; }
 
-211:  *\/  background-color: #EB5055;
-212:   transform: translateY(0px);
-213:   transition: all 2s ease;
-214: 
-215: }
+.bl-icon {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  cursor: pointer;
+  color: white;
+  -webkit-font-smoothing: antialiased; }
 
-Backtrace:
-main.scss:216
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.11/lib/sass/scss/parser.rb:1312:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.11/lib/sass/scss/parser.rb:1248:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.11/lib/sass/scss/parser.rb:1243:in `tok!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.11/lib/sass/scss/parser.rb:642:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.11/lib/sass/scss/parser.rb:634:in `ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.11/lib/sass/scss/parser.rb:659:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.11/lib/sass/scss/parser.rb:652:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.11/lib/sass/scss/parser.rb:116:in `stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.11/lib/sass/scss/parser.rb:41:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.11/lib/sass/engine.rb:409:in `_to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.11/lib/sass/engine.rb:274:in `render'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.11/lib/sass/plugin/compiler.rb:378:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.11/lib/sass/plugin/compiler.rb:189:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.11/lib/sass/plugin/compiler.rb:186:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.11/lib/sass/plugin/compiler.rb:186:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.11/lib/sass/plugin/compiler.rb:221:in `watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.11/lib/sass/plugin.rb:108:in `method_missing'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.11/lib/sass/exec.rb:509:in `watch_or_update'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.11/lib/sass/exec.rb:346:in `process_result'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.11/lib/sass/exec.rb:43:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.11/lib/sass/exec.rb:22:in `parse!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.11/bin/sass:13:in `<top (required)>'
-/usr/bin/sass:23:in `load'
-/usr/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"}\": expected \"}\", was \"\"\A         on line 216 of main.scss\A \A 211:  */  background-color: #EB5055;\A 212:   transform: translateY(0px);\A 213:   transition: all 2s ease;\A 214: \A 215: }"; }
+.bl-icon-close::before {
+  content: "\e005"; }
+
+.icon-sad::before {
+  content: "\e004"; }
+
+.icon-happy::before {
+  content: "\e002"; }
+
+.bl-icon::before {
+  font-size: 2em;
+  margin-bottom: 10px; }
+
+html {
+  margin-top: 0px;
+  background-color: #043D5D; }
+
+body {
+  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Abel', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background-color: #043D5D;
+  /*   overflow: hidden; */ }
+
+/* styled the homePage */
+.mainPage {
+  z-index: 100;
+  background-color: #043D5D;
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  min-height: 480px;
+  /*   top: 0px;
+left: 0px;
+right: 0px;
+bottom: 0px; */ }
+  .mainPage h2 {
+    font-size: 4em;
+    margin-top: 0px;
+    margin-bottom: 20px; }
+  .mainPage p {
+    font-size: 2em;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .mainPage button {
+    font-size: 1.25em;
+    background-color: #043D5D;
+    border: none;
+    cursor: pointer;
+    padding: 0px;
+    margin-bottom: 0px; }
+  .mainPage .homeButtonContainer p {
+    font-size: 1.45em; }
+  .mainPage .homeButton {
+    height: 36px;
+    width: 26px;
+    font-size: 2em; }
+  .mainPage .by {
+    margin-top: 15px;
+    font-size: 1.05em; }
+  .mainPage ul {
+    padding: 0px;
+    margin-bottom: 0px; }
+    .mainPage ul li {
+      list-style-type: none;
+      display: inline-block; }
+      .mainPage ul li img {
+        width: 50px;
+        border-radius: 10px; }
+  .mainPage .copyright {
+    font-size: 0.7em; }
+  .mainPage img {
+    margin-top: 250px;
+    display: inline-block;
+    width: 50px; }
+
+/* Made the textBox site off the screen so we could transition it in */
+/*style for the textBox, quote and close button*/
+.textBox {
+  z-index: 101;
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  top: 100%;
+  overflow: hidden;
+  text-align: center;
+  float: left;
+  transition: all 1s ease;
+  /*button*/ }
+  .textBox span.bl-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 0.8em; }
+  .textBox span.bl-icon:hover {
+    color: #1488C8; }
+  .textBox h3 {
+    font-size: 2em;
+    color: white;
+    margin: 0px 25px;
+    margin-top: 35px; }
+  .textBox .quote {
+    font-size: 1.5em; }
+
+/*CSS for quote container within textBox*/
+.badEvent {
+  width: 100%;
+  text-align: center;
+  margin-top: 5px; }
+
+.zoomOut {
+  transform: translateY(100%);
+  transform: scale(0.5);
+  opacity: 0;
+  transition: all 2s ease; }
+
+/* This is the class that we are adding to make textBox transition in */
+.replace {
+  margin: 0px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  min-height: 480px;
+  top: 0px;
+  left: 0px;
+  background-color: #EB5055;
+  transform: translateY(0px);
+  transition: all 2s ease; }

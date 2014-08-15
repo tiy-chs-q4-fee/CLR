@@ -113,6 +113,7 @@ bottom: 0px; */
           border-radius: 10px;
         }
       }
+    }
 
     .copyright {
       font-size: .7em;
@@ -121,7 +122,6 @@ bottom: 0px; */
       margin-top: 250px;
       display: inline-block;
       width:50px;
-
     }
     // .by {
     //   margin-top: 150px;
@@ -206,10 +206,7 @@ bottom: 0px; */
   min-height: 480px;
   top: 0px;
   left: 0px;
-/*   right: 0px;
-bottom: 0px;
- */  background-color: #EB5055;
+  background-color: #EB5055;
   transform: translateY(0px);
   transition: all 2s ease;
-
 }
