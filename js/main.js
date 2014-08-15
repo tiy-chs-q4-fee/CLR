@@ -306,7 +306,7 @@ function findHistoricPerson (todaysMonth, todaysDay) {
 
 };
 
-function findPreviousDayQuote (todaysMonth, todaysDay) {
+function findPreviousDayQuote (month, day) {
 
   todaysDay = todaysDay - 1;
 
@@ -454,6 +454,79 @@ function findPreviousDayHistoricYear (todaysMonth, todaysDay) {
   case 11:
     var infoArray = (augQuotes[todaysDay -1]);
     return infoArray[0];
+    break;
+
+  default:
+    statements_def
+    break;
+}
+
+};
+
+function findPreviousDayHistoricPerson (month, day) {
+
+  todaysDay = todaysDay -1;
+
+
+  switch (todaysMonth) {
+  case 0:
+    var infoArray = (augQuotes[day -1]);
+    return infoArray[1];
+    break;
+
+  case 1:
+    var infoArray = (augQuotes[day -1]);
+    return infoArray[1];
+    break;
+
+  case 2:
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[1];
+    break;
+
+  case 3:
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[1];
+    break;
+
+  case 4:
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[1];
+    break;
+
+  case 5:
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[1];
+    break;
+
+  case 6:
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[1];
+    break;
+
+  case 7:
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[1];
+    break;
+
+  case 8:
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[1];
+    break;
+
+  case 9:
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[1];
+    break;
+
+  case 10:
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[1];
+    break;
+
+  case 11:
+    var infoArray = (augQuotes[todaysDay -1]);
+    return infoArray[1];
     break;
 
   default:
