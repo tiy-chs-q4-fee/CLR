@@ -95,21 +95,30 @@ bottom: 0px; */
       width:26px;
       font-size: 2em;
     }
-    .by {
-      margin-top: 150px;
-      font-size: 1.05em;
+    .copyright {
+      font-size: .7em;
     }
-    ul {
-    padding: 0px;
-      li{
-        list-style-type: none;
-        display: inline-block;
-        img {
-          width: 50px;
-          border-radius: 10px;
-        }
-      }
+    img{
+      margin-top: 250px;
+      display: inline-block;
+      width:50px;
+
     }
+    // .by {
+    //   margin-top: 150px;
+    //   font-size: 1.05em;
+    // }
+    // ul {
+    // padding: 0px;
+    //   li{
+    //     list-style-type: none;
+    //     display: inline-block;
+    //     img {
+    //       width: 50px;
+    //       border-radius: 10px;
+    //     }
+    //   }
+    // }
 }
 
 
