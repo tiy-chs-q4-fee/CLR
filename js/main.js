@@ -306,154 +306,254 @@ function findHistoricPerson (month, day) {
 
 };
 
-function findPreviousDayQuote (month, day) {
-
-  todaysDay = todaysDay - 1;
-
-
-  switch (month) {
+function previousDay (){
+  switch (todaysMonth) {
   // January
   case 0:
-    var infoArray = (janQuotes[day -1]);
-    return infoArray[2];
+    if (todaysDay > 1){
+      todaysDay = todaysDay - 1;
+    } else {
+      todaysMonth = 11;
+      todaysDay = 31;
+    }
     break;
 
   // February
   case 1:
-    var infoArray = (febQuotes[day -1]);
-    return infoArray[2];
+    if (todaysDay > 1){
+      todaysDay = todaysDay - 1;
+    } else {
+      todaysMonth = todaysMonth -1;
+      todaysDay = 31;
+    }
     break;
 
   // March
   case 2:
-    var infoArray = (marQuotes[day -1]);
-    return infoArray[2];
+    if (todaysDay > 1){
+      todaysDay = todaysDay - 1;
+    } else {
+      todaysMonth = todaysMonth - 1;
+      todaysDay = 28;
+    }
     break;
 
   //April
   case 3:
-    var infoArray = (aprQuotes[day -1]);
-    return infoArray[2];
+    if (todaysDay > 1){
+      todaysDay = todaysDay - 1;
+    } else {
+      todaysMonth = todaysMonth - 1;
+      todaysDay = 31;
+    }
     break;
 
   //May
   case 4:
-    var infoArray = (mayQuotes[day -1]);
-    return infoArray[2];
+    if (todaysDay > 1){
+      todaysDay = todaysDay - 1;
+    } else {
+      todaysMonth = todaysMonth - 1;
+      todaysDay = 30;
+    }
     break;
 
   //June
   case 5:
-    var infoArray = (junQuotes[day -1]);
-    return infoArray[2];
+    if (todaysDay > 1){
+      todaysDay = todaysDay - 1;
+    } else {
+      todaysMonth = todaysMonth - 1;
+      todaysDay = 31;
+    }
     break;
 
   //July
   case 6:
-    var infoArray = (julQuotes[day -1]);
-    return infoArray[2];
+    if (todaysDay > 1){
+      todaysDay = todaysDay - 1;
+    } else {
+      todaysMonth = todaysMonth - 1;
+      todaysDay = 30;
+    }
     break;
 
   //August
   case 7:
-    var infoArray = (augQuotes[day -1]);
-    return infoArray[2];
+    if (todaysDay > 1){
+      todaysDay = todaysDay - 1;
+    } else {
+      todaysMonth = todaysMonth - 1;
+      todaysDay = 31;
+    }
     break;
 
   //September
   case 8:
-    var infoArray = (sepQuotes[day -1]);
-    return infoArray[2];
+    if (todaysDay > 1){
+      todaysDay = todaysDay - 1;
+    } else {
+      todaysMonth = todaysMonth - 1;
+      todaysDay = 31;
+    }
     break;
 
   //October
   case 9:
-    var infoArray = (octQuotes[day -1]);
-    return infoArray[2];
+    if (todaysDay > 1){
+      todaysDay = todaysDay - 1;
+    } else {
+      todaysMonth = todaysMonth - 1;
+      todaysDay = 30;
+    }
     break;
 
   //November
   case 10:
-    var infoArray = (novQuotes[day -1]);
-    return infoArray[2];
+    if (todaysDay > 1){
+      todaysDay = todaysDay - 1;
+    } else {
+      todaysMonth = todaysMonth - 1;
+      todaysDay = 31;
+    }
     break;
 
   //December
   case 11:
-    var infoArray = (decQuotes[day -1]);
-    return infoArray[2];
+    if (todaysDay > 1){
+      todaysDay = todaysDay - 1;
+    } else {
+      todaysMonth = todaysMonth - 1;
+      todaysDay = 30;
+    }
     break;
 
   default:
     statements_def
     break;
 }
-
 };
 
-function findPreviousDayHistoricYear (month, day) {
-
-  todaysDay = todaysDay - 1;
-
-  switch (month) {
+function nextDay (){
+  switch (todaysMonth) {
+  // January
   case 0:
-    var infoArray = (janQuotes[day -1]);
-    return infoArray[0];
+    if (todaysDay < 31){
+      todaysDay = todaysDay + 1;
+    } else {
+      todaysMonth = 1;
+      todaysDay = 1;
+    }
     break;
 
+  // February
   case 1:
-    var infoArray = (febQuotes[day -1]);
-    return infoArray[0];
+    if (todaysDay < 28){
+      todaysDay = todaysDay + 1;
+    } else {
+      todaysMonth = 2;
+      todaysDay = 1;
+    }
     break;
 
+  // March
   case 2:
-    var infoArray = (marQuotes[day -1]);
-    return infoArray[0];
+    if (todaysDay < 31){
+      todaysDay = todaysDay + 1;
+    } else {
+      todaysMonth = 3;
+      todaysDay = 1;
+    }
     break;
 
+  //April
   case 3:
-    var infoArray = (aprQuotes[day -1]);
-    return infoArray[0];
+    if (todaysDay < 30){
+      todaysDay = 4;
+    } else {
+      todaysMonth = todaysMonth + 1;
+      todaysDay = 1;
+    }
     break;
 
+  //May
   case 4:
-    var infoArray = (mayQuotes[day -1]);
-    return infoArray[0];
+    if (todaysDay < 31){
+      todaysDay = todaysDay + 1;
+    } else {
+      todaysMonth = 5;
+      todaysDay = 1;
+    }
     break;
 
+  //June
   case 5:
-    var infoArray = (junQuotes[day -1]);
-    return infoArray[0];
+    if (todaysDay < 30){
+      todaysDay = todaysDay + 1;
+    } else {
+      todaysMonth = todaysMonth + 1;
+      todaysDay = 1;
+    }
     break;
 
+  //July
   case 6:
-    var infoArray = (julQuotes[day -1]);
-    return infoArray[0];
+    if (todaysDay < 31){
+      todaysDay = todaysDay + 1;
+    } else {
+      todaysMonth = todaysMonth + 1;
+      todaysDay = 1;
+    }
     break;
 
+  //August
   case 7:
-    var infoArray = (augQuotes[day -1]);
-    return infoArray[0];
+    if (todaysDay < 31){
+      todaysDay = todaysDay + 1;
+    } else {
+      todaysMonth = todaysMonth + 1;
+      todaysDay = 1;
+    }
     break;
 
+  //September
   case 8:
-    var infoArray = (sepQuotes[day -1]);
-    return infoArray[0];
+    if (todaysDay < 30){
+      todaysDay = todaysDay + 1;
+    } else {
+      todaysMonth = todaysMonth + 1;
+      todaysDay = 1;
+    }
     break;
 
+  //October
   case 9:
-    var infoArray = (octQuotes[day -1]);
-    return infoArray[0];
+    if (todaysDay < 31){
+      todaysDay = todaysDay + 1;
+    } else {
+      todaysMonth = todaysMonth + 1;
+      todaysDay = 1;
+    }
     break;
 
+  //November
   case 10:
-    var infoArray = (novQuotes[day -1]);
-    return infoArray[0];
+    if (todaysDay < 30){
+      todaysDay = todaysDay + 1;
+    } else {
+      todaysMonth = todaysMonth + 1;
+      todaysDay = 1;
+    }
     break;
 
+  //December
   case 11:
-    var infoArray = (decQuotes[day -1]);
-    return infoArray[0];
+    if (todaysDay < 31){
+      todaysDay = todaysDay + 1;
+    } else {
+      todaysMonth = 0;
+      todaysDay = 1;
+    }
     break;
 
   default:
@@ -461,82 +561,12 @@ function findPreviousDayHistoricYear (month, day) {
     break;
 }
 
-};
-
-function findPreviousDayHistoricPerson (month, day) {
-
-  todaysDay = todaysDay -1;
-
-
-  switch (month) {
-  case 0:
-    var infoArray = (janQuotes[day -1]);
-    return infoArray[1];
-    break;
-
-  case 1:
-    var infoArray = (febQuotes[day -1]);
-    return infoArray[1];
-    break;
-
-  case 2:
-    var infoArray = (marQuotes[day -1]);
-    return infoArray[1];
-    break;
-
-  case 3:
-    var infoArray = (aprQuotes[day -1]);
-    return infoArray[1];
-    break;
-
-  case 4:
-    var infoArray = (mayQuotes[day -1]);
-    return infoArray[1];
-    break;
-
-  case 5:
-    var infoArray = (junQuotes[day -1]);
-    return infoArray[1];
-    break;
-
-  case 6:
-    var infoArray = (julQuotes[day -1]);
-    return infoArray[1];
-    break;
-
-  case 7:
-    var infoArray = (augQuotes[day -1]);
-    return infoArray[1];
-    break;
-
-  case 8:
-    var infoArray = (sepQuotes[day -1]);
-    return infoArray[1];
-    break;
-
-  case 9:
-    var infoArray = (octQuotes[day -1]);
-    return infoArray[1];
-    break;
-
-  case 10:
-    var infoArray = (novQuotes[day -1]);
-    return infoArray[1];
-    break;
-
-  case 11:
-    var infoArray = (decQuotes[day -1]);
-    return infoArray[1];
-    break;
-
-  default:
-    statements_def
-    break;
-}
 
 };
 
-
+function monthNameDisplay () {
+  return nameMonth(todaysMonth) + " " + todaysDay;
+};
 
 $(document).ready(function(){
 
@@ -546,15 +576,18 @@ $(document).ready(function(){
 
   $('.dateLine').html(homePageDateDisplay);
 
+
 // Created a function to toggle the class replace on and off of the textBox
 
 
 $(".homeButton").on("click", function(event){
 
+  todaysDay = todaysDate.getDate();
   event.preventDefault();
   $('.mainPage').addClass('zoomOut');
   $(".textBox").toggleClass('replace');
   $("html, body").animate({ scrollTop: 0 }, "slow");
+  $('.date').text(monthNameDisplay());
   $('.quote').text(findQuote (todaysMonth, todaysDay));
   $('.historicalYear').text(findHistoricYear (todaysMonth, todaysDay));
   $('.historicalPerson').text(findHistoricPerson (todaysMonth, todaysDay));
@@ -565,6 +598,26 @@ $('.bl-icon-close').on('click', function(event){
   event.preventDefault();
   $('.textBox').removeClass('replace').css("transition", "all 2s ease");
   $('.mainPage').removeClass('zoomOut').css("transition", "all 2s ease");
+});
+
+$('.icon-left').on('click', function(event){
+  event.preventDefault();
+  previousDay();
+  $('.quote').text(findQuote (todaysMonth, todaysDay));
+  $('.historicalYear').text(findHistoricYear (todaysMonth, todaysDay));
+  $('.historicalPerson').text(findHistoricPerson (todaysMonth, todaysDay));
+  $('.date').text(monthNameDisplay());
+
+});
+
+$('.icon-right').on('click', function(event){
+  event.preventDefault();
+  nextDay();
+  $('.quote').text(findQuote (todaysMonth, todaysDay));
+  $('.historicalYear').text(findHistoricYear (todaysMonth, todaysDay));
+  $('.historicalPerson').text(findHistoricPerson (todaysMonth, todaysDay));
+  $('.date').text(monthNameDisplay());
+
 });
 
 

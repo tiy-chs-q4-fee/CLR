@@ -255,7 +255,7 @@ augQuotes = [
 //14//
 ["1901", "sailors on the S.S. Islander", "when their ship hit an iceberg near Alaska and sinks!"],
 //15//
-["1040", "King Duncan I", "Duncan, King of the Scots goes is killed in battle against his frist cousin and rival Macbeth. The latter succeeds him for the throne."],
+["1040", "King Duncan I", "Duncan, King of the Scots is killed in battle against his first cousin and rival Macbeth. The latter succeeds him for the throne."],
 //16//
 ["1988", "New York character", "Mayor Koch vows to wip out street vendors, panhandlers and windshield washers."],
 //17//
