@@ -26,6 +26,12 @@
 .icon-happy::before {
   content: "\e002"; }
 
+.icon-left::before {
+  content: "\e008"; }
+
+.icon-right::before {
+  content: "\e009"; }
+
 .bl-icon::before {
   font-size: 2em;
   margin-bottom: 10px; }
@@ -79,15 +85,6 @@ bottom: 0px; */ }
   .mainPage .by {
     margin-top: 15px;
     font-size: 1.05em; }
-  .mainPage ul {
-    padding: 0px;
-    margin-bottom: 0px; }
-    .mainPage ul li {
-      list-style-type: none;
-      display: inline-block; }
-      .mainPage ul li img {
-        width: 50px;
-        border-radius: 10px; }
   .mainPage .copyright {
     font-size: 0.7em; }
   .mainPage img {
@@ -108,12 +105,12 @@ bottom: 0px; */ }
   float: left;
   transition: all 1s ease;
   /*button*/ }
-  .textBox span.bl-icon {
+  .textBox span.bl-icon-close {
     position: absolute;
     top: 10px;
     right: 10px;
     font-size: 0.8em; }
-  .textBox span.bl-icon:hover {
+  .textBox span.bl-icon-close:hover {
     color: #1488C8; }
   .textBox h3 {
     font-size: 2em;
@@ -122,6 +119,17 @@ bottom: 0px; */ }
     margin-top: 35px; }
   .textBox .quote {
     font-size: 1.5em; }
+  .textBox ul {
+    padding: 0px;
+    margin-bottom: 0px; }
+    .textBox ul li {
+      list-style-type: none;
+      display: inline-block;
+      vertical-align: middle; }
+    .textBox ul .date {
+      font-size: 2em;
+      padding-left: 10px;
+      padding-right: 10px; }
 
 /*CSS for quote container within textBox*/
 .badEvent {
