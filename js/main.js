@@ -370,6 +370,13 @@ function monthNameDisplay () {
   return nameMonth(todaysMonth) + " " + todaysDay;
 };
 
+var newQuote = [];
+var quotePerson;
+var quoteDay;
+var quoteMonth;
+var quoteYear;
+var quoteQuote;
+
 $(document).ready(function(){
 
   // $('.textBox').on('touchmove', function(event){
@@ -439,11 +446,26 @@ event.preventDefault();  $('.submitQuoteForm').toggleClass('showForm');
 
 });
 
+
+// Captures the data to add to the data file
+$('.submitButton').on('click', function(event) {
+
+  event.preventDefault();
+  quotePerson = $(".submitPerson").val();
+  quoteDay = $(".submitDay").val();
+  quoteMonth = $(".submitMonth").val();
+  quoteYear = $(".submitYear").val();
+  quoteQuote = $(".submitQuote").val();
+  newQuote = [quoteMonth, quoteDay, quoteYear, quotePerson, quoteQuote];
+  $('.submitQuoteForm').removeClass('showForm');
+});
+
+
+// Gets the submit form to close
 $('.bl-icon-close-form').on('click', function(event){
 
   event.preventDefault();
   $('.submitQuoteForm').removeClass('showForm');
 
 });
-
 });
