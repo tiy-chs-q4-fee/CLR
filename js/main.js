@@ -583,6 +583,7 @@ $(document).ready(function(){
 $(".homeButton").on("click", function(event){
 
   todaysDay = todaysDate.getDate();
+  todaysMonth = todaysDate.getMonth();
   event.preventDefault();
   $('.list').fadeIn(1000);
   $('.mainPage').addClass('zoomOut');

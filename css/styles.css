@@ -86,7 +86,7 @@ body {
   text-align: center;
   width: 100%;
   height: 100%;
-  min-height: 480px;
+  min-height: 525px;
   /*   top: 0px;
 left: 0px;
 right: 0px;
@@ -130,7 +130,7 @@ bottom: 0px; */ }
   width: 100%;
   height: 0px;
   top: 100%;
-  overflow: hidden;
+  overflow: auto;
   text-align: center;
   float: left;
   transition: all 1s ease;
@@ -153,8 +153,12 @@ bottom: 0px; */ }
     position: absolute;
     bottom: 10px;
     padding: 0px;
+<<<<<<< HEAD
+    margin-bottom: 25px; }
+=======
     margin: 0 auto;
     width: 100%; }
+>>>>>>> 7dbffa6ee7e04660205960b9baf5cf4f589dc0e7
     .textBox ul li {
       list-style-type: none;
       display: inline-block;
@@ -168,7 +172,8 @@ bottom: 0px; */ }
 .badEvent {
   width: 100%;
   text-align: center;
-  margin-top: 5px; }
+  margin-top: 5px;
+  margin-bottom: 50px; }
 
 .zoomOut {
   transform: translateY(100%);
@@ -182,7 +187,11 @@ bottom: 0px; */ }
   position: absolute;
   width: 100%;
   height: 100%;
+<<<<<<< HEAD
+  min-height: 615px;
+=======
   min-height: 500px;
+>>>>>>> 7dbffa6ee7e04660205960b9baf5cf4f589dc0e7
   top: 0px;
   background-color: #EB5055;
   transform: translateY(0px);
