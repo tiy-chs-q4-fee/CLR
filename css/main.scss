@@ -26,6 +26,10 @@
   content: "\e005";
 }
 
+.bl-icon-close-form::before {
+  content: "\e005";
+}
+
 .icon-sad::before {
   content: "\e004";
 }
@@ -161,6 +165,44 @@ bottom: 0px; */
 
     span.bl-icon-close:hover {
       color: #1488C8;
+    }
+
+    .showQuoteForm {
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      border: 1px solid #1488C8;
+      border-radius: 5px;
+      background-color: #1488C8;
+    }
+
+    .submitQuoteForm {
+      border: 1px solid black;
+      width: 50%;
+      display: none;
+      border-radius: 10px;
+      background-color: grey;
+      text-align: left;
+      padding-left: 10px;
+        input {
+          text-align: left;
+          width: 150px;
+          font-size: .8em;
+          height: 35px;
+        }
+    }
+
+    .showForm {
+      z-index: 150;
+      display: block;
+      position: absolute;
+    }
+
+    .bl-icon-close-form {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      font-size: .6em;
     }
 
     h3{

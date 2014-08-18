@@ -432,4 +432,18 @@ $('.homeButton').on('mouseover', function(event){
 
 });
 
+// For the submit form
+$('.showQuoteForm').on("click", function(event) {
+
+event.preventDefault();  $('.submitQuoteForm').toggleClass('showForm');
+
+});
+
+$('.bl-icon-close-form').on('click', function(event){
+
+  event.preventDefault();
+  $('.submitQuoteForm').removeClass('showForm');
+
+});
+
 });
