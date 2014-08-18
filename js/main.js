@@ -13,6 +13,7 @@ var todaysDay = todaysDate.getDate();
 // Get a month number from the todaysDate date object
 var todaysMonth = todaysDate.getMonth();
 // next create a function that takes that month number and converts it into a string with the month name
+
 function nameMonth (monthNumber){
   switch (monthNumber) {
   case 0:
@@ -74,493 +75,71 @@ var thisMonthName = nameMonth(todaysMonth);
 
 var homePageDateDisplay = thisMonthName + " " + todaysDay + ", " + todaysYear;
 
-
-
+var todaysQuote = [];
+var todaysQuoteArr = [];
 
 // create a varibale with the date set up to display on the homepage without the hours and minute
 
+var randomNumber = 0;
+var randomGenerator = 1;
+var randomQuote = [];
+var newQuote = {
+  1: ["1990", "Manuel Antonio Noriega", "After holing up for 10 days at the Vatican embassy in Panama City, General Manuel Noriega surrenders to U.S. troops to face charges of drug trafficking."],
+  2: ["1990", "Manuel Antonio Noriega", "After holing up for 10 days at the Vatican embassy in Panama City, General Manuel Noriega surrenders to U.S. troops to face charges of drug trafficking."],
+};
 
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+};
 
 
 // create a function to get the quote from the right month and date
 function findQuote (month, day) {
-
-  switch (month) {
-  // January
-  case 0:
-    var infoArray = (janQuotes[day -1]);
-    return infoArray[2];
-    break;
-
-  // February
-  case 1:
-    var infoArray = (febQuotes[day -1]);
-    return infoArray[2];
-    break;
-
-  // March
-  case 2:
-    var infoArray = (marQuotes[day -1]);
-    return infoArray[2];
-    break;
-
-  //April
-  case 3:
-    var infoArray = (aprQuotes[day -1]);
-    return infoArray[2];
-    break;
-
-  //May
-  case 4:
-    var infoArray = (mayQuotes[day -1]);
-    return infoArray[2];
-    break;
-
-  //June
-  case 5:
-    var infoArray = (junQuotes[day -1]);
-    return infoArray[2];
-    break;
-
-  //July
-  case 6:
-    var infoArray = (julQuotes[day -1]);
-    return infoArray[2];
-    break;
-
-  //August
-  case 7:
-    var infoArray = (augQuotes[day -1]);
-    return infoArray[2];
-    break;
-
-  //September
-  case 8:
-    var infoArray = (sepQuotes[day -1]);
-    return infoArray[2];
-    break;
-
-  //October
-  case 9:
-    var infoArray = (octQuotes[day -1]);
-    return infoArray[2];
-    break;
-
-  //November
-  case 10:
-    var infoArray = (novQuotes[day -1]);
-    return infoArray[2];
-    break;
-
-  //December
-  case 11:
-    var infoArray = (decQuotes[day -1]);
-    return infoArray[2];
-    break;
-
-  default:
-    statements_def
-    break;
-}
+  randomQuote = [];
+  todaysQuote = quotes[month];
+  todaysQuoteObj = todaysQuote[day];
+  randomGenerator = Object.keys(todaysQuoteObj).length;
+  randomNumber = getRandomInt(0, randomGenerator);
+  randomQuote = todaysQuoteObj[randomNumber];
+  return randomQuote[2];
 
 };
 
+function addNewQuote (){
+
+
+};
 
 function findHistoricYear (month, day) {
 
-  switch (month) {
-  case 0:
-    var infoArray = (janQuotes[day -1]);
-    return infoArray[0];
-    break;
-
-  case 1:
-    var infoArray = (febQuotes[day -1]);
-    return infoArray[0];
-    break;
-
-  case 2:
-    var infoArray = (marQuotes[day -1]);
-    return infoArray[0];
-    break;
-
-  case 3:
-    var infoArray = (aprQuotes[day -1]);
-    return infoArray[0];
-    break;
-
-  case 4:
-    var infoArray = (mayQuotes[day -1]);
-    return infoArray[0];
-    break;
-
-  case 5:
-    var infoArray = (junQuotes[day -1]);
-    return infoArray[0];
-    break;
-
-  case 6:
-    var infoArray = (julQuotes[day -1]);
-    return infoArray[0];
-    break;
-
-  case 7:
-    var infoArray = (augQuotes[day -1]);
-    return infoArray[0];
-    break;
-
-  case 8:
-    var infoArray = (sepQuotes[day -1]);
-    return infoArray[0];
-    break;
-
-  case 9:
-    var infoArray = (octQuotes[day -1]);
-    return infoArray[0];
-    break;
-
-  case 10:
-    var infoArray = (novQuotes[day -1]);
-    return infoArray[0];
-    break;
-
-  case 11:
-    var infoArray = (decQuotes[day -1]);
-    return infoArray[0];
-    break;
-
-  default:
-    statements_def
-    break;
-}
+  todaysQuote = quotes[month];
+  todaysQuoteObj = todaysQuote[day];
+  randomQuote = todaysQuoteObj[randomNumber];
+  return randomQuote[0];
 
 };
 
 function findHistoricPerson (month, day) {
 
-  switch (month) {
-  case 0:
-    var infoArray = (janQuotes[day -1]);
-    return infoArray[1];
-    break;
-
-  case 1:
-    var infoArray = (febQuotes[day -1]);
-    return infoArray[1];
-    break;
-
-  case 2:
-    var infoArray = (marQuotes[day -1]);
-    return infoArray[1];
-    break;
-
-  case 3:
-    var infoArray = (aprQuotes[day -1]);
-    return infoArray[1];
-    break;
-
-  case 4:
-    var infoArray = (mayQuotes[day -1]);
-    return infoArray[1];
-    break;
-
-  case 5:
-    var infoArray = (junQuotes[day -1]);
-    return infoArray[1];
-    break;
-
-  case 6:
-    var infoArray = (julQuotes[day -1]);
-    return infoArray[1];
-    break;
-
-  case 7:
-    var infoArray = (augQuotes[day -1]);
-    return infoArray[1];
-    break;
-
-  case 8:
-    var infoArray = (sepQuotes[day -1]);
-    return infoArray[1];
-    break;
-
-  case 9:
-    var infoArray = (octQuotes[day -1]);
-    return infoArray[1];
-    break;
-
-  case 10:
-    var infoArray = (novQuotes[day -1]);
-    return infoArray[1];
-    break;
-
-  case 11:
-    var infoArray = (decQuotes[day -1]);
-    return infoArray[1];
-    break;
-
-  default:
-    statements_def
-    break;
-}
+  todaysQuote = quotes[month];
+  todaysQuoteObj = todaysQuote[day];
+  randomQuote = todaysQuoteObj[randomNumber];
+  return randomQuote[1];
 
 };
 
 function previousDay (){
-  switch (todaysMonth) {
-  // January
-  case 0:
-    if (todaysDay > 1){
-      todaysDay = todaysDay - 1;
-    } else {
-      todaysMonth = 11;
-      todaysDay = 31;
-    }
-    break;
 
-  // February
-  case 1:
-    if (todaysDay > 1){
-      todaysDay = todaysDay - 1;
-    } else {
-      todaysMonth = todaysMonth -1;
-      todaysDay = 31;
-    }
-    break;
+    todaysDate.setDate(todaysDate.getDate() - 1);
+    todaysDay = todaysDate.getDate();
+    todaysMonth = todaysDate.getMonth();
 
-  // March
-  case 2:
-    if (todaysDay > 1){
-      todaysDay = todaysDay - 1;
-    } else {
-      todaysMonth = todaysMonth - 1;
-      todaysDay = 28;
-    }
-    break;
-
-  //April
-  case 3:
-    if (todaysDay > 1){
-      todaysDay = todaysDay - 1;
-    } else {
-      todaysMonth = todaysMonth - 1;
-      todaysDay = 31;
-    }
-    break;
-
-  //May
-  case 4:
-    if (todaysDay > 1){
-      todaysDay = todaysDay - 1;
-    } else {
-      todaysMonth = todaysMonth - 1;
-      todaysDay = 30;
-    }
-    break;
-
-  //June
-  case 5:
-    if (todaysDay > 1){
-      todaysDay = todaysDay - 1;
-    } else {
-      todaysMonth = todaysMonth - 1;
-      todaysDay = 31;
-    }
-    break;
-
-  //July
-  case 6:
-    if (todaysDay > 1){
-      todaysDay = todaysDay - 1;
-    } else {
-      todaysMonth = todaysMonth - 1;
-      todaysDay = 30;
-    }
-    break;
-
-  //August
-  case 7:
-    if (todaysDay > 1){
-      todaysDay = todaysDay - 1;
-    } else {
-      todaysMonth = todaysMonth - 1;
-      todaysDay = 31;
-    }
-    break;
-
-  //September
-  case 8:
-    if (todaysDay > 1){
-      todaysDay = todaysDay - 1;
-    } else {
-      todaysMonth = todaysMonth - 1;
-      todaysDay = 31;
-    }
-    break;
-
-  //October
-  case 9:
-    if (todaysDay > 1){
-      todaysDay = todaysDay - 1;
-    } else {
-      todaysMonth = todaysMonth - 1;
-      todaysDay = 30;
-    }
-    break;
-
-  //November
-  case 10:
-    if (todaysDay > 1){
-      todaysDay = todaysDay - 1;
-    } else {
-      todaysMonth = todaysMonth - 1;
-      todaysDay = 31;
-    }
-    break;
-
-  //December
-  case 11:
-    if (todaysDay > 1){
-      todaysDay = todaysDay - 1;
-    } else {
-      todaysMonth = todaysMonth - 1;
-      todaysDay = 30;
-    }
-    break;
-
-  default:
-    statements_def
-    break;
-}
 };
 
 function nextDay (){
-  switch (todaysMonth) {
-  // January
-  case 0:
-    if (todaysDay < 31){
-      todaysDay = todaysDay + 1;
-    } else {
-      todaysMonth = 1;
-      todaysDay = 1;
-    }
-    break;
-
-  // February
-  case 1:
-    if (todaysDay < 28){
-      todaysDay = todaysDay + 1;
-    } else {
-      todaysMonth = 2;
-      todaysDay = 1;
-    }
-    break;
-
-  // March
-  case 2:
-    if (todaysDay < 31){
-      todaysDay = todaysDay + 1;
-    } else {
-      todaysMonth = 3;
-      todaysDay = 1;
-    }
-    break;
-
-  //April
-  case 3:
-    if (todaysDay < 30){
-      todaysDay = 4;
-    } else {
-      todaysMonth = todaysMonth + 1;
-      todaysDay = 1;
-    }
-    break;
-
-  //May
-  case 4:
-    if (todaysDay < 31){
-      todaysDay = todaysDay + 1;
-    } else {
-      todaysMonth = 5;
-      todaysDay = 1;
-    }
-    break;
-
-  //June
-  case 5:
-    if (todaysDay < 30){
-      todaysDay = todaysDay + 1;
-    } else {
-      todaysMonth = todaysMonth + 1;
-      todaysDay = 1;
-    }
-    break;
-
-  //July
-  case 6:
-    if (todaysDay < 31){
-      todaysDay = todaysDay + 1;
-    } else {
-      todaysMonth = todaysMonth + 1;
-      todaysDay = 1;
-    }
-    break;
-
-  //August
-  case 7:
-    if (todaysDay < 31){
-      todaysDay = todaysDay + 1;
-    } else {
-      todaysMonth = todaysMonth + 1;
-      todaysDay = 1;
-    }
-    break;
-
-  //September
-  case 8:
-    if (todaysDay < 30){
-      todaysDay = todaysDay + 1;
-    } else {
-      todaysMonth = todaysMonth + 1;
-      todaysDay = 1;
-    }
-    break;
-
-  //October
-  case 9:
-    if (todaysDay < 31){
-      todaysDay = todaysDay + 1;
-    } else {
-      todaysMonth = todaysMonth + 1;
-      todaysDay = 1;
-    }
-    break;
-
-  //November
-  case 10:
-    if (todaysDay < 30){
-      todaysDay = todaysDay + 1;
-    } else {
-      todaysMonth = todaysMonth + 1;
-      todaysDay = 1;
-    }
-    break;
-
-  //December
-  case 11:
-    if (todaysDay < 31){
-      todaysDay = todaysDay + 1;
-    } else {
-      todaysMonth = 0;
-      todaysDay = 1;
-    }
-    break;
-
-  default:
-    statements_def
-    break;
-}
-
+     todaysDate.setDate(todaysDate.getDate() + 1);
+    todaysDay = todaysDate.getDate();
+    todaysMonth = todaysDate.getMonth();
 
 };
 
@@ -585,7 +164,6 @@ $(".homeButton").on("click", function(event){
   todaysDay = todaysDate.getDate();
   todaysMonth = todaysDate.getMonth();
   event.preventDefault();
-  $('.list').fadeIn(1000);
   $('.mainPage').addClass('zoomOut');
   $(".textBox").toggleClass('replace');
   $("html, body").animate({ scrollTop: 0 }, "slow");
@@ -598,7 +176,6 @@ $(".homeButton").on("click", function(event){
 
 $('.bl-icon-close').on('click', function(event){
   event.preventDefault();
-  $('.list').fadeOut();
   $('.textBox').removeClass('replace').css("transition", "all 2s ease");
   $('.mainPage').removeClass('zoomOut').css("transition", "all 2s ease");
 });
@@ -636,6 +213,19 @@ $(".newuser").on("click", function (event) {
 
   event.preventDefault();
         $('.popupRegistration').toggleClass('showForm');
+});
+
+$('.showQuoteForm').on("click", function(event) {
+
+event.preventDefault();  $('.submitQuoteForm').toggleClass('showForm');
+
+});
+
+$('.bl-icon-close-form').on('click', function(event){
+
+  event.preventDefault();
+  $('.submitQuoteForm').removeClass('showForm');
+
 });
 
 

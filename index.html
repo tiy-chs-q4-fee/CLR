@@ -24,10 +24,54 @@
         <label>Email Address</label><br> <input type="email"><br>
         <label>Password</label><br> <input type="password"><br>
         <label>Birthday</label><br>
-        <input type="Number" placeholder="month"><br>
-        <input type="Day" placeholder="day"> <br>
-        <input type="Year" placeholder="year"><br>
-        <a class="btn btn_red" href="#">Register</a>
+        <select type="Number" placeholder="month">
+          <option value="0">Jan</option>
+          <option value="1">Feb</option>
+          <option value="2">Mar</option>
+          <option value="3">Apr</option>
+          <option value="4">May</option>
+          <option value="5">Jun</option>
+          <option value="6">Jul</option>
+          <option value="7">Aug</option>
+          <option value="8">Sep</option>
+          <option value="9">Oct</option>
+          <option value="10">Nov</option>
+          <option value="11">Dec</option>
+        </select>
+        <select type="Day" placeholder="day"><br>
+          <option value="01">1</option>
+          <option value="0">2</option>
+          <option value="0">3</option>
+          <option value="0">4</option>
+          <option value="0">5</option>
+          <option value="0">6</option>
+          <option value="0">7</option>
+          <option value="0">8</option>
+          <option value="0">9</option>
+          <option value="0">10</option>
+          <option value="0">11</option>
+          <option value="0">12</option>
+          <option value="0">13</option>
+          <option value="0">14</option>
+          <option value="0">15</option>
+          <option value="0">16</option>
+          <option value="0">17</option>
+          <option value="0">18</option>
+          <option value="0">19</option>
+          <option value="0">20</option>
+          <option value="0">21</option>
+          <option value="0">22</option>
+          <option value="0">23</option>
+          <option value="0">24</option>
+          <option value="0">25</option>
+          <option value="0">26</option>
+          <option value="0">27</option>
+          <option value="0">28</option>
+          <option value="0">29</option>
+          <option value="0">30</option>
+          <option value="0">31</option>
+        </select>
+        <button>Register</button>
       </div>
     </form>
 
@@ -47,10 +91,21 @@
       <img src="images/CLRLogoBox.png" alt="logo">
       <p class="copyright"> &copy; Copyright 2014 CLR Designs. All Rights Reserved</p>
   </div>
-    <!-- creating the div to hold all of the text box contents -->
-  <div class="textBox">
 
+
+  <!-- creating the div to hold all of the text box contents -->
+  <div class="textBox">
     <span class="bl-icon bl-icon-close"></span>
+    <button class="showQuoteForm">Want to submit a quote?</button>
+    <form class="submitQuoteForm" action="">
+      <span class="bl-icon bl-icon-close-form"></span>
+      <h4>Please fill in all of the information to submit your quote!</h4><br>
+      Month:<br><input type="number" name="submitMonth" placeholder="Please enter month!" required><br>
+      Day:<br><input type="number" name="submitDay" placeholder="Please enter day!" required><br>
+      Year:<br><input type="number" name="submitYear" placeholder="Please enter year!" required><br>
+      <textarea name="submitQuote" rows="10" cols="50" required>Type your quote here!</textarea><br>
+      <button type="submit">Submit Your Quote!</button>
+    </form>
       <!-- h3 title with changing date -->
       <h3>On this day in <span class="historicalYear">(fill date)</span>, <span class='historicalPerson'>this person</span> had a really terrible day.</h3>
 
