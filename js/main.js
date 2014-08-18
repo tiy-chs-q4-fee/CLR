@@ -631,4 +631,11 @@ $('.homeButton').on('mouseover', function(event){
 
 });
 
+$(".newuser").on("click", function (event) {
+
+  event.preventDefault();
+        $('.popupRegistration').toggleClass('showForm');
+});
+
+
 });

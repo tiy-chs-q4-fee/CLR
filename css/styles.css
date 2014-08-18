@@ -48,6 +48,36 @@ body {
   background-color: #043D5D;
   /*   overflow: hidden; */ }
 
+.popupRegistration {
+  display: none;
+  border: 2px solid white;
+  width: 50%;
+  border-radius: 10px;
+  background-color: grey; }
+
+.showForm {
+  z-index: 150;
+  display: block;
+  position: absolute; }
+
+.popupRegistration input[type="text"], .user_register input[type="email"], .user_register input[type="password"] {
+  display: block;
+  text-align: center;
+  width: 90%;
+  margin: 2%;
+  padding: 15px;
+  border: 1px solid lightblue;
+  color: #666; }
+
+.popupRegistration .content {
+  display: block;
+  text-align: left;
+  width: 95%;
+  margin: 2%; }
+
+.showForm {
+  display: block; }
+
 /* styled the homePage */
 .mainPage {
   z-index: 100;
