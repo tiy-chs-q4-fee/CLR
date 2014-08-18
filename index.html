@@ -35,11 +35,12 @@
     <form class="submitQuoteForm" action="">
       <span class="bl-icon bl-icon-close-form"></span>
       <h4>Please fill in all of the information to submit your quote!</h4><br>
-      Month:<br><input type="number" name="submitMonth" placeholder="Please enter month!" required><br>
-      Day:<br><input type="number" name="submitDay" placeholder="Please enter day!" required><br>
-      Year:<br><input type="number" name="submitYear" placeholder="Please enter year!" required><br>
-      <textarea name="submitQuote" rows="10" cols="50" required>Type your quote here!</textarea><br>
-      <button type="submit">Submit Your Quote!</button>
+      Who did this happen to?<br><input class="submitPerson" type="text" placeholder="Please enter name!" required><br>
+      Month:<br><input class="submitMonth" type="number" name="submitMonth" placeholder="Please enter month!" required><br>
+      Day:<br><input class="submitDay" type="number" name="submitDay" placeholder="Please enter day!" required><br>
+      Year:<br><input class="submitYear" type="number" name="submitYear" placeholder="Please enter year!" required><br>
+      <textarea class="submitQuote" name="submitQuote" rows="10" cols="50" required>Type your quote here!</textarea><br>
+      <button class="submitButton" type="submit">Submit Your Quote!</button>
     </form>
       <!-- h3 title with changing date -->
       <h3>On this day in <span class="historicalYear">(fill date)</span>, <span class='historicalPerson'>this person</span> had a really terrible day.</h3>
