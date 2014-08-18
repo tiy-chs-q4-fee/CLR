@@ -26,10 +26,21 @@
       <img src="https://s3.amazonaws.com/uploads.hipchat.com/31349/1041653/Ov1NkrrJ7o3C6mK/CLRLogoBox.png" alt="logo">
       <p class="copyright"> &copy; Copyright 2014 CLR Designs. All Rights Reserved</p>
   </div>
-    <!-- creating the div to hold all of the text box contents -->
-  <div class="textBox">
 
+
+  <!-- creating the div to hold all of the text box contents -->
+  <div class="textBox">
     <span class="bl-icon bl-icon-close"></span>
+    <button class="showQuoteForm">Want to submit a quote?</button>
+    <form class="submitQuoteForm" action="">
+      <span class="bl-icon bl-icon-close-form"></span>
+      <h4>Please fill in all of the information to submit your quote!</h4><br>
+      Month:<br><input type="number" name="submitMonth" placeholder="Please enter month!" required><br>
+      Day:<br><input type="number" name="submitDay" placeholder="Please enter day!" required><br>
+      Year:<br><input type="number" name="submitYear" placeholder="Please enter year!" required><br>
+      <textarea name="submitQuote" rows="10" cols="50" required>Type your quote here!</textarea><br>
+      <button type="submit">Submit Your Quote!</button>
+    </form>
       <!-- h3 title with changing date -->
       <h3>On this day in <span class="historicalYear">(fill date)</span>, <span class='historicalPerson'>this person</span> had a really terrible day.</h3>
 

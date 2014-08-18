@@ -20,6 +20,9 @@
 .bl-icon-close::before {
   content: "\e005"; }
 
+.bl-icon-close-form::before {
+  content: "\e005"; }
+
 .icon-sad::before {
   content: "\e004"; }
 
@@ -112,6 +115,35 @@ bottom: 0px; */ }
     font-size: 0.8em; }
   .textBox span.bl-icon-close:hover {
     color: #1488C8; }
+  .textBox .showQuoteForm {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    border: 1px solid #1488C8;
+    border-radius: 5px;
+    background-color: #1488C8; }
+  .textBox .submitQuoteForm {
+    border: 1px solid black;
+    width: 50%;
+    display: none;
+    border-radius: 10px;
+    background-color: grey;
+    text-align: left;
+    padding-left: 10px; }
+    .textBox .submitQuoteForm input {
+      text-align: left;
+      width: 150px;
+      font-size: 0.8em;
+      height: 35px; }
+  .textBox .showForm {
+    z-index: 150;
+    display: block;
+    position: absolute; }
+  .textBox .bl-icon-close-form {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 0.6em; }
   .textBox h3 {
     font-size: 2em;
     color: white;
