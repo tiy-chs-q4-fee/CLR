@@ -3,9 +3,18 @@ var quotes = {
 
 	//January Quotes
 	0: {
-		1: 	["1876", "Native Americans", "The United States ordered all Native Americans to move into reservations."],
-		2: 	["1953", "NBA Baltimore Bullets players", 'The Baltimore Bullets began a 32 game road losing streak.'],
-		3: 	["1990", "Manuel Antonio Noriega", "After holing up for 10 days at the Vatican embassy in Panama City, General Manuel Noriega surrenders to U.S. troops to face charges of drug trafficking."],
+		1: {	
+			1: ["1876", "Native Americans", "The United States ordered all Native Americans to move into reservations."],	
+			2: ["1953", "NBA Baltimore Bullets players", 'The Baltimore Bullets began a 32 game road losing streak.']
+		},
+		2: 	{
+			1: ["1953", "NBA Baltimore Bullets players", 'The Baltimore Bullets began a 32 game road losing streak.'],
+			2: ["1953", "NBA Baltimore Bullets players", 'The Baltimore Bullets began a 32 game road losing streak.']
+		},	
+		3: 	{
+			1: ["1990", "Manuel Antonio Noriega", "After holing up for 10 days at the Vatican embassy in Panama City, General Manuel Noriega surrenders to U.S. troops to face charges of drug trafficking."],
+			2: ["1990", "Manuel Antonio Noriega", "After holing up for 10 days at the Vatican embassy in Panama City, General Manuel Noriega surrenders to U.S. troops to face charges of drug trafficking."]
+		},
 		4: 	["1974", "President Richard Nixon", "President Richard Nixon refuses to hand over tape recordings and documents that had been subpoenaed by the Senate Watergate Committee. Marking the beginning of the end of his Presidency, Nixon would resign from office in disgrace eight months later."],
 		5: 	["1643", "The institute of marriage", "In the first record of a legal divorce in the American colonies, Anne Clarke of the Massachusetts Bay Colony is granted a divorce from her absent and adulterous husband, Denis Clarke, by the Quarter Court of Boston, Massachusetts."],
 		6: 	["1838", "The smoke signal", "On this day in 1838, Samuel Morse's telegraph system is demonstrated for the first time at the Speedwell Iron Works in Morristown, New Jersey. The telegraph, a device which used electric impulses to transmit encoded messages over a wire, would eventually revolutionize long-distance communication, reaching the height of its popularity in the 1920s and 1930s."],
@@ -243,28 +252,78 @@ var quotes = {
 
 	//August Quotes
 	7: {
-		1:	["1953", "Fidel Castro", "Fidel Castro was arrested in Cuba."],
-		2:	["1991", "Rick James", "Funk singer Rick James was arrested on sexual torture charges."],
-		3:	["1987", "Joe Niekro", "The Minnesota Twins pitcher, Jor Niekro is caught with a file on the mound and is ejected."],
-		4:	["1970", "Jim Morrison", "Rocker Jim Morrison was arrested for drunkenness."],
-		5:	["1964", "North Vietnam", "The US started bombing North Vietnam."],
-		6:	["1974", "Great Northern RR", "An explosion and fire destroyed a Great Northern Railroad yard in Wenatchee, WA."],
-		7:	["1983", "AT&T", "Over 650,000 AT&T employees went on strike."],
-		8:	["1975", "Hank Williams Jr.", "Hank Williams Jr. fell off the side of Ajax Peak in Montana."],
-		9:	["1974", "Richard Nixon", "Richard Nixon is forced to resign as President of The United States of America."],
-		10:	["1984", "Mary Decker", "Mary Decker tripped on the heel of Zola Budd during the 3,000m Olympic run."],
-		11:	["1945", "Emperor Hirohito", "Allies refused Japan's surrender offer to retain Emperor Hirohito."],
-		12:	["2000", "Submarine K-141 Kursk", "The Oscar class submarine K-141 Kursk of the Russian Navy exploded and sank in the Barents Sea during a military exercise."],
-		13:	["1961", "the people of Berlin", "Berlin was divided as East Germany sealed off the border between the city's eastern and western sectors in order to halt the flight of refugees."],
-		14:	["1901", "sailors on the S.S. Islander", "when their ship hit an iceberg near Alaska and sinks!"],
-		15:	["1040", "King Duncan I", "Duncan, King of the Scots is killed in battle against his first cousin and rival Macbeth. The latter succeeds him for the throne."],
-		16:	["1988", "New York character", "Mayor Koch vows to wip out street vendors, panhandlers and windshield washers."],
-		17:	["1957", "Alice Roth", "Philadelphia Phillies player, Richie Ashburn fouls a ball that hits Alice Roth twice in the same at bat. The first foul broke her nose, and the second foul hits her while leaving on a stretcher."],
-		18:	["1591", "John White", "Governor, John White, of Roanoke Island colony returned from a three year trip to England to find that everyone in his colony, including his daughter and granddaughter, had disappeared."],
-		19:	["1999", "Slobodan Milosevic","In Belgrade tens of thousands of Serbians rallied to demand the resignation of Slobodan Milosevic as president of the Federal Republic of Yugoslavia."],
-		20:	["1619", "these men", "The first Black slaves were brought to the colony of Jamestown, Virginia by the Dutch."],
-		21:	["1841", "Peeping Toms", "John Hampton patents venetian blinds."],
-		22:	["1911", "security guards at the Louvre", "The Mona Lisa was stolen from the Louvre by Vincenzo Perugia"],
+		1:	{
+			0:	["1953", "Fidel Castro", "Fidel Castro was arrested in Cuba."],
+			1:  ["1953", "Fidel Castro", "Fidel Castro was arrested in Cuba."]
+		},
+		2:	{
+			0:  ["1991", "Rick James", "Funk singer Rick James was arrested on sexual torture charges."],
+			1:  ["1991", "Rick James", "Funk singer Rick James was arrested on sexual torture charges."]
+		},	
+		3:	{
+			0:	["1987", "Joe Niekro", "The Minnesota Twins pitcher, Jor Niekro is caught with a file on the mound and is ejected."],
+			1: 	["1987", "Joe Niekro", "The Minnesota Twins pitcher, Jor Niekro is caught with a file on the mound and is ejected."]
+		},
+		4:	{
+			0:  ["1970", "Jim Morrison", "Rocker Jim Morrison was arrested for drunkenness."],
+			1:  ["1970", "Jim Morrison", "Rocker Jim Morrison was arrested for drunkenness."] 
+		},
+		5:	{
+			0:  ["1964", "North Vietnam", "The US started bombing North Vietnam."],
+			1:  ["1964", "North Vietnam", "The US started bombing North Vietnam."]
+		},	
+		6:	{
+			0:  ["1974", "Great Northern RR", "An explosion and fire destroyed a Great Northern Railroad yard in Wenatchee, WA."]
+		},	
+		7:	{
+			0:  ["1983", "AT&T", "Over 650,000 AT&T employees went on strike."]
+		},
+		8:	{
+			0:  ["1975", "Hank Williams Jr.", "Hank Williams Jr. fell off the side of Ajax Peak in Montana."]
+		},
+		9:	{
+			0:  ["1974", "Richard Nixon", "Richard Nixon is forced to resign as President of The United States of America."]
+		},	
+		10:	{
+			0:  ["1984", "Mary Decker", "Mary Decker tripped on the heel of Zola Budd during the 3,000m Olympic run."]
+		},
+		11:	{
+			0: ["1945", "Emperor Hirohito", "Allies refused Japan's surrender offer to retain Emperor Hirohito."]
+		},
+		12:	{
+			0:  ["2000", "Submarine K-141 Kursk", "The Oscar class submarine K-141 Kursk of the Russian Navy exploded and sank in the Barents Sea during a military exercise."]
+		},
+		13:	{
+			0:  ["1961", "the people of Berlin", "Berlin was divided as East Germany sealed off the border between the city's eastern and western sectors in order to halt the flight of refugees."]
+		},
+		14:	{
+			0:  ["1901", "sailors on the S.S. Islander", "when their ship hit an iceberg near Alaska and sinks!"]
+		},
+		15:	{
+			0:  ["1040", "King Duncan I", "Duncan, King of the Scots is killed in battle against his first cousin and rival Macbeth. The latter succeeds him for the throne."]
+		},
+		16:	{
+			0:  ["1988", "New York character", "Mayor Koch vows to wip out street vendors, panhandlers and windshield washers."]
+		},
+		17:	{
+			0:  ["1957", "Alice Roth", "Philadelphia Phillies player, Richie Ashburn fouls a ball that hits Alice Roth twice in the same at bat. The first foul broke her nose, and the second foul hits her while leaving on a stretcher."]
+		},
+		18:	{
+			0: ["1595", "John White", "Governor, John White, of Roanoke Island colony returned from a three year trip to England to find that everyone in his colony, including his daughter and granddaughter, had disappeared."],
+			1: ["1593", "John White", "Governor, John White, of Roanoke Island colony returned from a three year trip to England to find that everyone in his colony, including his daughter and granddaughter, had disappeared."]
+		},
+		19:	{
+			0:  ["1999", "Slobodan Milosevic","In Belgrade tens of thousands of Serbians rallied to demand the resignation of Slobodan Milosevic as president of the Federal Republic of Yugoslavia."]
+		},
+		20:	{
+			0:  ["1619", "these men", "The first Black slaves were brought to the colony of Jamestown, Virginia by the Dutch."]
+		},
+		21:	{
+			0:  ["1841", "Peeping Toms", "John Hampton patents venetian blinds."]
+		},
+		22:	{
+			0:  ["1911", "security guards at the Louvre", "The Mona Lisa was stolen from the Louvre by Vincenzo Perugia"]
+		},
 		23:	["2011", "Muammar al-Gaddafi", "The Libyan leader is overthrown after the National Transitional Council forces take countrol of Bab al-Azizia compound during the 2011 Libyan Civil War."],
 		24:	["1961", "justice", "Former Nazi leadier Johannes Voster becomes South Africa's minister of justice."],
 		25:	["1814", "bibliophiles", "British forces destroy the Librarry of Congress containing 3,000 books."],
