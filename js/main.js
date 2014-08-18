@@ -74,8 +74,8 @@ var thisMonthName = nameMonth(todaysMonth);
 
 var homePageDateDisplay = thisMonthName + " " + todaysDay + ", " + todaysYear;
 
-
-
+var todaysQuote = [];
+var todaysQuoteArr = [];
 
 // create a varibale with the date set up to display on the homepage without the hours and minute
 
@@ -85,224 +85,26 @@ var homePageDateDisplay = thisMonthName + " " + todaysDay + ", " + todaysYear;
 // create a function to get the quote from the right month and date
 function findQuote (month, day) {
 
-  switch (month) {
-  // January
-  case 0:
-    var infoArray = (janQuotes[day -1]);
-    return infoArray[2];
-    break;
-
-  // February
-  case 1:
-    var infoArray = (febQuotes[day -1]);
-    return infoArray[2];
-    break;
-
-  // March
-  case 2:
-    var infoArray = (marQuotes[day -1]);
-    return infoArray[2];
-    break;
-
-  //April
-  case 3:
-    var infoArray = (aprQuotes[day -1]);
-    return infoArray[2];
-    break;
-
-  //May
-  case 4:
-    var infoArray = (mayQuotes[day -1]);
-    return infoArray[2];
-    break;
-
-  //June
-  case 5:
-    var infoArray = (junQuotes[day -1]);
-    return infoArray[2];
-    break;
-
-  //July
-  case 6:
-    var infoArray = (julQuotes[day -1]);
-    return infoArray[2];
-    break;
-
-  //August
-  case 7:
-    var infoArray = (augQuotes[day -1]);
-    return infoArray[2];
-    break;
-
-  //September
-  case 8:
-    var infoArray = (sepQuotes[day -1]);
-    return infoArray[2];
-    break;
-
-  //October
-  case 9:
-    var infoArray = (octQuotes[day -1]);
-    return infoArray[2];
-    break;
-
-  //November
-  case 10:
-    var infoArray = (novQuotes[day -1]);
-    return infoArray[2];
-    break;
-
-  //December
-  case 11:
-    var infoArray = (decQuotes[day -1]);
-    return infoArray[2];
-    break;
-
-  default:
-    statements_def
-    break;
-}
+  todaysQuote = quotes[month];
+  todaysQuoteArr = todaysQuote[day];
+  return todaysQuoteArr[2];
 
 };
 
 
 function findHistoricYear (month, day) {
 
-  switch (month) {
-  case 0:
-    var infoArray = (janQuotes[day -1]);
-    return infoArray[0];
-    break;
-
-  case 1:
-    var infoArray = (febQuotes[day -1]);
-    return infoArray[0];
-    break;
-
-  case 2:
-    var infoArray = (marQuotes[day -1]);
-    return infoArray[0];
-    break;
-
-  case 3:
-    var infoArray = (aprQuotes[day -1]);
-    return infoArray[0];
-    break;
-
-  case 4:
-    var infoArray = (mayQuotes[day -1]);
-    return infoArray[0];
-    break;
-
-  case 5:
-    var infoArray = (junQuotes[day -1]);
-    return infoArray[0];
-    break;
-
-  case 6:
-    var infoArray = (julQuotes[day -1]);
-    return infoArray[0];
-    break;
-
-  case 7:
-    var infoArray = (augQuotes[day -1]);
-    return infoArray[0];
-    break;
-
-  case 8:
-    var infoArray = (sepQuotes[day -1]);
-    return infoArray[0];
-    break;
-
-  case 9:
-    var infoArray = (octQuotes[day -1]);
-    return infoArray[0];
-    break;
-
-  case 10:
-    var infoArray = (novQuotes[day -1]);
-    return infoArray[0];
-    break;
-
-  case 11:
-    var infoArray = (decQuotes[day -1]);
-    return infoArray[0];
-    break;
-
-  default:
-    statements_def
-    break;
-}
+  todaysQuote = quotes[month];
+  todaysQuoteArr = todaysQuote[day];
+  return todaysQuoteArr[0];
 
 };
 
 function findHistoricPerson (month, day) {
 
-  switch (month) {
-  case 0:
-    var infoArray = (janQuotes[day -1]);
-    return infoArray[1];
-    break;
-
-  case 1:
-    var infoArray = (febQuotes[day -1]);
-    return infoArray[1];
-    break;
-
-  case 2:
-    var infoArray = (marQuotes[day -1]);
-    return infoArray[1];
-    break;
-
-  case 3:
-    var infoArray = (aprQuotes[day -1]);
-    return infoArray[1];
-    break;
-
-  case 4:
-    var infoArray = (mayQuotes[day -1]);
-    return infoArray[1];
-    break;
-
-  case 5:
-    var infoArray = (junQuotes[day -1]);
-    return infoArray[1];
-    break;
-
-  case 6:
-    var infoArray = (julQuotes[day -1]);
-    return infoArray[1];
-    break;
-
-  case 7:
-    var infoArray = (augQuotes[day -1]);
-    return infoArray[1];
-    break;
-
-  case 8:
-    var infoArray = (sepQuotes[day -1]);
-    return infoArray[1];
-    break;
-
-  case 9:
-    var infoArray = (octQuotes[day -1]);
-    return infoArray[1];
-    break;
-
-  case 10:
-    var infoArray = (novQuotes[day -1]);
-    return infoArray[1];
-    break;
-
-  case 11:
-    var infoArray = (decQuotes[day -1]);
-    return infoArray[1];
-    break;
-
-  default:
-    statements_def
-    break;
-}
+    todaysQuote = quotes[month];
+  todaysQuoteArr = todaysQuote[day];
+  return todaysQuoteArr[1];
 
 };
 
@@ -585,7 +387,6 @@ $(".homeButton").on("click", function(event){
   todaysDay = todaysDate.getDate();
   todaysMonth = todaysDate.getMonth();
   event.preventDefault();
-  $('.list').fadeIn(1000);
   $('.mainPage').addClass('zoomOut');
   $(".textBox").toggleClass('replace');
   $("html, body").animate({ scrollTop: 0 }, "slow");
@@ -598,7 +399,6 @@ $(".homeButton").on("click", function(event){
 
 $('.bl-icon-close').on('click', function(event){
   event.preventDefault();
-  $('.list').fadeOut();
   $('.textBox').removeClass('replace').css("transition", "all 2s ease");
   $('.mainPage').removeClass('zoomOut').css("transition", "all 2s ease");
 });

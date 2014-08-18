@@ -155,12 +155,8 @@ bottom: 0px; */ }
     position: absolute;
     bottom: 10px;
     padding: 0px;
-<<<<<<< HEAD
-    margin-bottom: 25px; }
-=======
     margin: 0 auto;
     width: 100%; }
->>>>>>> 7dbffa6ee7e04660205960b9baf5cf4f589dc0e7
     .textBox ul li {
       list-style-type: none;
       display: inline-block;
@@ -189,11 +185,7 @@ bottom: 0px; */ }
   position: absolute;
   width: 100%;
   height: 100%;
-<<<<<<< HEAD
-  min-height: 615px;
-=======
   min-height: 500px;
->>>>>>> 7dbffa6ee7e04660205960b9baf5cf4f589dc0e7
   top: 0px;
   background-color: #EB5055;
   transform: translateY(0px);
