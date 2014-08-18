@@ -585,6 +585,7 @@ $(".homeButton").on("click", function(event){
   todaysDay = todaysDate.getDate();
   todaysMonth = todaysDate.getMonth();
   event.preventDefault();
+  $('.list').fadeIn(1000);
   $('.mainPage').addClass('zoomOut');
   $(".textBox").toggleClass('replace');
   $("html, body").animate({ scrollTop: 0 }, "slow");
@@ -597,6 +598,7 @@ $(".homeButton").on("click", function(event){
 
 $('.bl-icon-close').on('click', function(event){
   event.preventDefault();
+  $('.list').fadeOut();
   $('.textBox').removeClass('replace').css("transition", "all 2s ease");
   $('.mainPage').removeClass('zoomOut').css("transition", "all 2s ease");
 });
