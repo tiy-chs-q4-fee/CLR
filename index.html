@@ -13,18 +13,19 @@
   <div class="border">
   <!-- Creating the container to hold all of the homepage content -->
 
-
+      <div class="loginheader">
         <input type="text" name="username" placeholder="username">
         <input type="password" name="password" placeholder="password">
         <button class="login">login</button>
         <button class="newuser">new user</button>
+      </div>
     <form class="popupRegistration" action="">
       <div class="content">
-        <label>Full Name</label><br> <input class="name" type="name"><br>
-        <label>Email Address</label><br> <input class="email" type="email"><br>
-        <label>Password</label><br> <input class="password" type="password"><br>
+        <label>Full Name</label><br> <input class="name" type="name" required><br>
+        <label>Email Address</label><br> <input class="email" type="email" required><br>
+        <label>Password</label><br> <input class="password" type="password" required><br>
         <label>Birthday</label><br>
-        <select type="Number" class= "month" placeholder="month">
+        <select type="Number" class= "month" placeholder="month" required>
           <option value="0">Jan</option>
           <option value="1">Feb</option>
           <option value="2">Mar</option>
@@ -38,7 +39,7 @@
           <option value="10">Nov</option>
           <option value="11">Dec</option>
         </select>
-        <select type="Day" class="day"placeholder="day"><br>
+        <select type="Day" class="day"placeholder="day" required><br>
           <option value="01">1</option>
           <option value="0">2</option>
           <option value="0">3</option>
