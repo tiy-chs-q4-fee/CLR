@@ -32,7 +32,7 @@ var janQuotes = [
 ["1978", "Big Hair", "Sweden outlaws aerosol sprays due to their harmful effect on the ozone layer, becoming the first nation to enact such a ban."],
 ["1798", "Roger Griswold", "Rep Matthew Lyon (Vt) spits in face of Rep Roger Griswold (Ct) in US House of Representatives, after an argument."],
 ["1871", "Sunbathers in San Fransisco", "Millions of birds fly over western SF, darkening the sky."]
-],
+]
 
 var quotes = {
 
