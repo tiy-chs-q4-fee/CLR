@@ -95,6 +95,7 @@ function getRandomInt(min, max) {
 
 // create a function to get the quote from the right month and date
 function findQuote (month, day) {
+
   randomQuote = [];
   todaysQuote = quotes[month];
   todaysQuoteObj = todaysQuote[day];
@@ -102,12 +103,6 @@ function findQuote (month, day) {
   randomNumber = getRandomInt(0, randomGenerator);
   randomQuote = todaysQuoteObj[randomNumber];
   return randomQuote[2];
-
-};
-
-function addNewQuote (){
-
-
 };
 
 function findHistoricYear (month, day) {
@@ -154,6 +149,13 @@ var quoteMonth;
 var quoteYear;
 var quoteQuote;
 
+var newUserArr = [];
+var emailvar;
+var namevar;
+var passwordvar;
+var userBirthMonth;
+var userBirthDay;
+
 $(document).ready(function(){
 
   // $('.textBox').on('touchmove', function(event){
@@ -178,6 +180,9 @@ $(".homeButton").on("click", function(event){
   $('.quote').text(findQuote (todaysMonth, todaysDay));
   $('.historicalYear').text(findHistoricYear (todaysMonth, todaysDay));
   $('.historicalPerson').text(findHistoricPerson (todaysMonth, todaysDay));
+  if (userBirthMonth == todaysMonth && userBirthDay == todaysDay){
+    $('.quote').append('<p>Happy Birthday ' + namevar + '!  Another great thing (besides your birthday of course) that happened on this day is....</p>')
+  };
 
 });
 
@@ -194,6 +199,9 @@ $('.icon-left').on('click', function(event){
   $('.historicalYear').text(findHistoricYear (todaysMonth, todaysDay));
   $('.historicalPerson').text(findHistoricPerson (todaysMonth, todaysDay));
   $('.date').text(monthNameDisplay());
+  if (userBirthMonth == todaysMonth && userBirthDay == todaysDay){
+    $('.quote').append('<p>Happy Birthday ' + namevar + '!  Another great thing (besides your birthday of course) that happened on this day is....</p>')
+  };
 
 });
 
@@ -204,6 +212,9 @@ $('.icon-right').on('click', function(event){
   $('.historicalYear').text(findHistoricYear (todaysMonth, todaysDay));
   $('.historicalPerson').text(findHistoricPerson (todaysMonth, todaysDay));
   $('.date').text(monthNameDisplay());
+  if (userBirthMonth == todaysMonth && userBirthDay == todaysDay){
+    $('.quote').append('<p>Happy Birthday ' + namevar + '!  Another great thing (besides your birthday of course) that happened on this day is....</p>')
+  };
 
 });
 
@@ -216,7 +227,23 @@ $('.homeButton').on('mouseover', function(event){
 
 });
 
-// For the submit form
+$(".newuser").on("click", function (event) {
+
+  event.preventDefault();
+        $('.popupRegistration').toggleClass('showForm');
+});
+
+$(".register").on("click", function(event){
+  event.preventDefault();
+  namevar = $(".name").val();
+  emailvar = $(".email").val();
+  passwordvar = $(".password").val();
+  userBirthMonth = $(".month").val();
+  userBirthDay = $(".day").val();
+  newUserArr = [namevar, emailvar, passwordvar, userBirthMonth, userBirthDay];
+  $('.popupRegistration').removeClass('showForm');
+});
+
 $('.showQuoteForm').on("click", function(event) {
 
 event.preventDefault();  $('.submitQuoteForm').toggleClass('showForm');
@@ -246,4 +273,8 @@ $('.bl-icon-close-form').on('click', function(event){
   $('.submitQuoteForm').removeClass('showForm');
 
 });
+
+
+
+
 });

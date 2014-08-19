@@ -1,16 +1,52 @@
 //create empty variables for each month to hold the strings of quotes
+
+var janQuotes = [
+["Jan", "1876", "Native Americans", "The United States ordered all Native Americans to move into reservations."],
+["Jan","1953", "NBA Baltimore Bullets players", 'The Baltimore Bullets began a 32 game road losing streak.'],
+["Jan","1990", "Manuel Antonio Noriega", "After holing up for 10 days at the Vatican embassy in Panama City, General Manuel Noriega surrenders to U.S. troops to face charges of drug trafficking."],
+["Jan","1974", "President Richard Nixon", "President Richard Nixon refuses to hand over tape recordings and documents that had been subpoenaed by the Senate Watergate Committee. Marking the beginning of the end of his Presidency, Nixon would resign from office in disgrace eight months later."],
+["Jan","1643", "The institute of marriage", "In the first record of a legal divorce in the American colonies, Anne Clarke of the Massachusetts Bay Colony is granted a divorce from her absent and adulterous husband, Denis Clarke, by the Quarter Court of Boston, Massachusetts."],
+["Jan","1838", "The smoke signal", "On this day in 1838, Samuel Morse's telegraph system is demonstrated for the first time at the Speedwell Iron Works in Morristown, New Jersey. The telegraph, a device which used electric impulses to transmit encoded messages over a wire, would eventually revolutionize long-distance communication, reaching the height of its popularity in the 1920s and 1930s."],
+["Jan","1999", "Bill Clinton", "On January 7, 1999, the impeachment trial of President Bill Clinton, formally charged with lying under oath and obstructing justice, begins in the Senate. As instructed in Article 1 of the U.S. Constitution, Supreme Court Chief Justice William Rehnquist was sworn in to preside, and the senators were sworn in as jurors."],
+["Jan","2000", "Buffalo Bills fans", "In an American Football Conference (AFC) wild card match-up at Adelphia Coliseum in Nashville, Tennessee, the Tennessee Titans stage a last-second come-from-behind victory to beat the Buffalo Bills 22-16 on a kickoff return play later dubbed the \"Music City Miracle.\""],
+["Jan","2007", "The flip style cell phone", "Apple Inc. CEO Steve Jobs unveils the iPhone—a touchscreen mobile phone with an iPod, camera and Web-browsing capabilities, among other features—at the Macworld convention in San Francisco."],
+["Jan","1982", "Dallas Cowboy fans", "San Francisco 49ers wide receiver Dwight Clark makes a leaping catch in the end zone on a pass from quarterback Joe Montana with 51 seconds left in the National Football Conference (NFC) championship game against the Dallas Cowboys. \"The Catch\" set up a successful extra point kick by Ray Wersching that lifted the 49ers to a 28-27 victory and a trip to Super Bowl XVI."],
+["Jan","1927", "Charlie Chaplin", "Charlie Chaplin’s $16 million estate is frozen by court receivers after his second wife, Lita Grey Chaplin, sues for divorce."],
+["Jan","1991", "Saddam Hussein", "The U.S. Congress gives the green light to military action against Iraq in the Persian Gulf Crisis."],
+["Jan","1919", "Alcohol", "California votes to ratify the prohibition amendment."],
+["Jan","1526", "Francis of France", "After being held captive by Charles V for a year, signs the Treaty of Madrid, giving up most of his claims in France and Italy."],
+["Jan","2001", "Encyclopedia salespersons", "Wikipedia goes online."],
+["Jan","600", "The phrase gesundheit", "Pope Gregory the Great decreea saying \"God bless You\" is the correct response to a sneeze."],
+["Jan","1950", "Brinks armored cars company", "11 men steal more than $2 million from the Brinks Armored Car depot in Boston, Massachusetts."],
+["Jan","1990", "Mayor Marion Barry", "At the end of a joint sting operation by FBI agents and District of Columbia police, Mayor Marion Barry is arrested and charged with drug possession and the use of crack, a crystalline form of cocaine"],
+["Jan","2007", "Chinese diet", "Beijing, China, the capital city of the planet's most populous nation, gets its first drive-through McDonald's restaurant."],
+["Jan","1863", "Genreal Burnside", "Union General Ambrose Burnside's Army of the Potomac begins an offensive against General Robert E. Lee's Army of Northern Virginia that quickly bogs down as several days of heavy rain turn the roads of Virginia into a muddy quagmire. The campaign was abandoned three days later."],
+["1950", "Alger Hiss", "In the conclusion to one of the most spectacular trials in U.S. history, former State Department official Alger Hiss is convicted of perjury. He was convicted of having perjured himself in regards to testimony about his alleged involvement in a Soviet spy ring before and during World War II."],
+["1807", "Aaron Burr", "President Thomas Jefferson exposes a plot by Aaron Burr to form a new republic in the Southwest."],
+["1965", "Bill Russell", "Boston Celtic center Bill Russell misses all 14 shots in loss to Philadelphia Warriors led by Wilt Chamberlain"],
+["41", "Caligula", "Shortly after declaring himself a god, Caligula is assassinated by two Praetorian tribunes."],
+["1915", "The mailed letter", "Alexander Graham Bell in New York and Thomas Watson in San Francisco make a record telephone transmission."],
+["1967", "Chicago citizens", "Chicago Blizzard strikes with a record 23 inches of snow fall causing 800 buses and 50,000 automobiles to be abandoned."],
+["1984", "Michael Jackson", "His hair catches fire and he is burned during a commercial filming for Pepsi."],
+["1871", "The French Army","Surrounded by Prussian troops and suffering from famine, the French army in Paris surrenders. During the siege, balloons were used to keep contact with the outside world."],
+["1978", "Big Hair", "Sweden outlaws aerosol sprays due to their harmful effect on the ozone layer, becoming the first nation to enact such a ban."],
+["1798", "Roger Griswold", "Rep Matthew Lyon (Vt) spits in face of Rep Roger Griswold (Ct) in US House of Representatives, after an argument."],
+["1871", "Sunbathers in San Fransisco", "Millions of birds fly over western SF, darkening the sky."]
+]
+
 var quotes = {
+
 
 	//January Quotes
 	0: {
-		1: {	
-			1: ["1876", "Native Americans", "The United States ordered all Native Americans to move into reservations."],	
+		1: {
+			1: ["1876", "Native Americans", "The United States ordered all Native Americans to move into reservations."],
 			2: ["1953", "NBA Baltimore Bullets players", 'The Baltimore Bullets began a 32 game road losing streak.']
 		},
 		2: 	{
 			1: ["1953", "NBA Baltimore Bullets players", 'The Baltimore Bullets began a 32 game road losing streak.'],
 			2: ["1953", "NBA Baltimore Bullets players", 'The Baltimore Bullets began a 32 game road losing streak.']
-		},	
+		},
 		3: 	{
 			1: ["1990", "Manuel Antonio Noriega", "After holing up for 10 days at the Vatican embassy in Panama City, General Manuel Noriega surrenders to U.S. troops to face charges of drug trafficking."],
 			2: ["1990", "Manuel Antonio Noriega", "After holing up for 10 days at the Vatican embassy in Panama City, General Manuel Noriega surrenders to U.S. troops to face charges of drug trafficking."]
@@ -259,22 +295,22 @@ var quotes = {
 		2:	{
 			0:  ["1991", "Rick James", "Funk singer Rick James was arrested on sexual torture charges."],
 			1:  ["1991", "Rick James", "Funk singer Rick James was arrested on sexual torture charges."]
-		},	
+		},
 		3:	{
 			0:	["1987", "Joe Niekro", "The Minnesota Twins pitcher, Jor Niekro is caught with a file on the mound and is ejected."],
 			1: 	["1987", "Joe Niekro", "The Minnesota Twins pitcher, Jor Niekro is caught with a file on the mound and is ejected."]
 		},
 		4:	{
 			0:  ["1970", "Jim Morrison", "Rocker Jim Morrison was arrested for drunkenness."],
-			1:  ["1970", "Jim Morrison", "Rocker Jim Morrison was arrested for drunkenness."] 
+			1:  ["1970", "Jim Morrison", "Rocker Jim Morrison was arrested for drunkenness."]
 		},
 		5:	{
 			0:  ["1964", "North Vietnam", "The US started bombing North Vietnam."],
 			1:  ["1964", "North Vietnam", "The US started bombing North Vietnam."]
-		},	
+		},
 		6:	{
 			0:  ["1974", "Great Northern RR", "An explosion and fire destroyed a Great Northern Railroad yard in Wenatchee, WA."]
-		},	
+		},
 		7:	{
 			0:  ["1983", "AT&T", "Over 650,000 AT&T employees went on strike."]
 		},
@@ -283,7 +319,7 @@ var quotes = {
 		},
 		9:	{
 			0:  ["1974", "Richard Nixon", "Richard Nixon is forced to resign as President of The United States of America."]
-		},	
+		},
 		10:	{
 			0:  ["1984", "Mary Decker", "Mary Decker tripped on the heel of Zola Budd during the 3,000m Olympic run."]
 		},
