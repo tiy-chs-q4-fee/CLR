@@ -13,32 +13,33 @@
   <div class="border">
   <!-- Creating the container to hold all of the homepage content -->
 
-
+      <div class="loginheader">
         <input type="text" name="username" placeholder="username">
         <input type="password" name="password" placeholder="password">
         <button class="login">login</button>
         <button class="newuser">new user</button>
-        <form class="popupRegistration" action="">
-          <div class="content">
-            <label>Full Name</label><br> <input class="name" type="name"><br>
-            <label>Email Address</label><br> <input class="email" type="email"><br>
-            <label>Password</label><br> <input class="password" type="password"><br>
-            <label>Birthday</label><br>
-            <select type="Number" class= "month" placeholder="month">
-              <option value="0">Jan</option>
-              <option value="1">Feb</option>
-              <option value="2">Mar</option>
-              <option value="3">Apr</option>
-              <option value="4">May</option>
-              <option value="5">Jun</option>
-              <option value="6">Jul</option>
-              <option value="7">Aug</option>
-              <option value="8">Sep</option>
-              <option value="9">Oct</option>
-              <option value="10">Nov</option>
-              <option value="11">Dec</option>
-            </select>
-        <select type="Day" class="day"placeholder="day"><br>
+      </div>
+    <form class="popupRegistration" action="">
+      <div class="content">
+        <label>Full Name</label><br> <input class="name" type="name" required><br>
+        <label>Email Address</label><br> <input class="email" type="email" required><br>
+        <label>Password</label><br> <input class="password" type="password" required><br>
+        <label>Birthday</label><br>
+        <select type="Number" class= "month" placeholder="month" required>
+          <option value="0">Jan</option>
+          <option value="1">Feb</option>
+          <option value="2">Mar</option>
+          <option value="3">Apr</option>
+          <option value="4">May</option>
+          <option value="5">Jun</option>
+          <option value="6">Jul</option>
+          <option value="7">Aug</option>
+          <option value="8">Sep</option>
+          <option value="9">Oct</option>
+          <option value="10">Nov</option>
+          <option value="11">Dec</option>
+        </select>
+        <select type="Day" class="day"placeholder="day" required><br>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -73,8 +74,6 @@
         </select>
         <button class="register">Register</button>
       </div>
-    </form>
-
     </form>
 
   <div class="mainPage">

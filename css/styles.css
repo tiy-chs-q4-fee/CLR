@@ -51,6 +51,14 @@ body {
   background-color: #043D5D;
   /*   overflow: hidden; */ }
 
+.loginheader .login {
+  background-color: #F45257;
+  color: white; }
+
+.loginheader .newuser {
+  background-color: #F45257;
+  color: white; }
+
 .popupRegistration {
   display: none;
   border: 2px solid white;
@@ -77,6 +85,8 @@ body {
   text-align: left;
   width: 95%;
   margin: 2%; }
+  .popupRegistration .content button {
+    background-color: #F45257; }
 
 .showForm {
   display: block; }
