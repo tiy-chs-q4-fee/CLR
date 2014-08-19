@@ -261,7 +261,7 @@ $('.submitButton').on('click', function(event) {
   quoteYear = $(".submitYear").val();
   quoteQuote = $(".submitQuote").val();
   newQuote = [quoteYear, quotePerson, quoteQuote];
-  Object.defineProperty(quotes[quoteMonth][quoteDay], "3", {value: newQuote});
+  quotes[quoteMonth][quoteDay][Object.keys(todaysQuoteObj).length + 1] = newQuote;
   $('.submitQuoteForm').removeClass('showForm');
 });
 
