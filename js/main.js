@@ -154,6 +154,13 @@ var quoteMonth;
 var quoteYear;
 var quoteQuote;
 
+var newUserArr = [];
+var emailvar;
+var namevar;
+var passwordvar;
+var monthvar;
+var dayvar;
+
 $(document).ready(function(){
 
   // $('.textBox').on('touchmove', function(event){
@@ -216,7 +223,21 @@ $('.homeButton').on('mouseover', function(event){
 
 });
 
-// For the submit form
+$(".newuser").on("click", function (event) {
+
+  event.preventDefault();
+        $('.popupRegistration').toggleClass('showForm');
+});
+
+$(".register").on("click", function(event){
+namevar = $(".name").val();
+emailvar = $(".email").val();
+passwordvar = $(".password").val();
+monthvar = $(".month").val();
+dayvar = $(".day").val();
+newUserArr = [namevar, emailvar, passwordvar, monthvar, dayvar];
+});
+
 $('.showQuoteForm').on("click", function(event) {
 
 event.preventDefault();  $('.submitQuoteForm').toggleClass('showForm');
@@ -246,4 +267,8 @@ $('.bl-icon-close-form').on('click', function(event){
   $('.submitQuoteForm').removeClass('showForm');
 
 });
+
+
+
+
 });
