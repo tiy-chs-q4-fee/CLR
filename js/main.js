@@ -254,7 +254,8 @@ $('.submitButton').on('click', function(event) {
   quoteMonth = $(".submitMonth").val();
   quoteYear = $(".submitYear").val();
   quoteQuote = $(".submitQuote").val();
-  newQuote = [quoteMonth, quoteDay, quoteYear, quotePerson, quoteQuote];
+  newQuote = [quoteYear, quotePerson, quoteQuote];
+  Object.defineProperty(quotes[quoteMonth][quoteDay], "3", {value: newQuote});
   $('.submitQuoteForm').removeClass('showForm');
 });
 
